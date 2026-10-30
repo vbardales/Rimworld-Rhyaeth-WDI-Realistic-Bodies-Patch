@@ -18,10 +18,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
-  - "2026-10-30: unverified: name, packageId and public visibility to confirm with Virginie (original creation: bare name, public, author Nelim, PUBLISHING.md Nommage)"
-  - "2026-10-30: unverified: GitHub repository Rimworld-Rhyaeth-WDI-Patch not created, nothing pushed"
   - "2026-10-30: feature: the patch itself, see Docs/NOTES.md (PatchOperationReplace on FurDef ERN_RhyaethBody)"
-  - "2026-10-30: unverified: session code to get from Virginie before naming the session"
 updated: 2026-10-30
 protocols_read_sha: c6de33235d7caf727b37773a83d706ac8e820aaa
 ---
