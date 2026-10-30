@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Rhyaeth WDI Patch</name>
+  <author>Nelim</author>
+  <packageId>nelim.rhyaethwdipatch</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <url>https://github.com/vbardales/Rimworld-Rhyaeth-WDI-Patch</url>
+  <description>A small compatibility patch: the Rhy'aeth xenotype of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3707527452]Erin's Rhy'aeth[/url] wears the scaly body textures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3527486510]WDI's Realistic Bodies[/url] (the ScalySkin set), body type by body type.
+
+WORK IN PROGRESS. This page describes the intended behaviour; the patch itself is not written yet.
+
+IF I GO QUIET
+
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+AI-GENERATED
+
+This mod was made with Claude Code (Anthropic) under human direction, review and testing. Stated openly: working with these tools is my job.
+
+THANKS
+
+Erin and Haru'a for Rhy'aeth. Windonsi and Starkz for WDI's Realistic Bodies, whose textures this patch only points at: none is copied here.
+
+[url=https://github.com/vbardales/Rimworld-Rhyaeth-WDI-Patch]Source code on GitHub[/url]</description>
+  <modDependencies>
+    <li>
+      <packageId>Erin.Rhyaeth</packageId>
+      <displayName>Erin's Rhy'aeth</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3707527452</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>WDI.Realistic.Bodies</packageId>
+      <displayName>WDI's Realistic Bodies</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3527486510</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Erin.Rhyaeth</li>
+    <li>WDI.Realistic.Bodies</li>
+  </loadAfter>
+</ModMetaData>
