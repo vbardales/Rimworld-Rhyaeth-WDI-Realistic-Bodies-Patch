@@ -1,8 +1,8 @@
 ---
-mod: Rhyaeth WDI Patch
-packageId: nelim.rhyaethwdipatch
-repo: Rimworld-Rhyaeth-WDI-Patch
-remote: https://github.com/vbardales/Rimworld-Rhyaeth-WDI-Patch.git
+mod: Rhyaeth WDI Realistic Bodies Patch
+packageId: nelim.rhyaethwdirealisticbodiespatch
+repo: Rimworld-Rhyaeth-WDI-Realistic-Bodies-Patch
+remote: https://github.com/vbardales/Rimworld-Rhyaeth-WDI-Realistic-Bodies-Patch.git
 visibility: public
 detached: yes
 workflow_stage: setupRepo
@@ -23,9 +23,9 @@ updated: 2026-10-30
 protocols_read_sha: c6de33235d7caf727b37773a83d706ac8e820aaa
 ---
 
-# Rhyaeth WDI Patch: status
+# Rhyaeth WDI Realistic Bodies Patch: status
 
 Current state only: the front matter above is the source of truth, run lines go to `docs/runs/`.
-Check it with `scripts/Check-Status.ps1 -Mod RhyaethWdiPatch` (no ERROR) before the commit that leaves the monorepo.
+Check it with `scripts/Check-Status.ps1 -Mod RhyaethWdiRealisticBodiesPatch` (no ERROR) before the commit that leaves the monorepo.
 
 Skeleton created 2026-10-30: closed-list folders only, `Mod/About/About.xml` with `Erin.Rhyaeth` and `WDI.Realistic.Bodies`, no code, no patch, no art.
