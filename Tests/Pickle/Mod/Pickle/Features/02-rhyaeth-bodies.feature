@@ -6,6 +6,7 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
   # state the picture shows; whether the scales are WDI's is read by eye on the capture. A green capture proves only that it
   # was taken. The Baby body (Erin's swaddled-baby texture, left unpatched) is not photographed here.
   # The fur path is asserted by NPT's ColonistRace step (tolerates a direction or _Female suffix, so Thin female may read ScalySkin_Thin_Female).
+  # Scale colours: the drawn colour can differ a little from the def value (randomBrightnessFactor 0.18, read of NPT); the expected rgb is the def value, read the failure line before changing it.
   # NOT PLAYED YET.
 
   Scenario Outline: a <gender> Rhy'aeth with the <type> body
@@ -60,16 +61,18 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     And Nelim's Pickle Tools: "Jet" gender is male
     And Nelim's Pickle Tools: "Jet" xenotype is "ERN_Rhyaeth"
     And Nelim's Pickle Tools: "Jet" body type is Male
+    And Nelim's Pickle Tools: "Jet" skin colour override is cleared
     And Nelim's Pickle Tools: "Jet" has the gene "ERN_Rhyaeth<colour>Scales"
     And I wait 5 ticks
     And game speed is paused
     Then Nelim's Pickle Tools: "Jet" holds the gene "ERN_Rhyaeth<colour>Scales"
     And Nelim's Pickle Tools: the fur of "Jet" is drawn from "Pawn/ScalySkin/ScalySkin_Male"
+    And Nelim's Pickle Tools: "Jet" skin colour reads rgb (<r>, <g>, <b>)
     When I take a screenshot "rhyaeth-scales-<colour>"
     Then no errors were logged
 
     Examples:
-      | colour |
-      | Green  |
-      | Bronze |
-      | White  |
+      | colour | r   | g   | b   |
+      | Green  | 50  | 125 | 50  |
+      | Bronze | 140 | 120 | 80  |
+      | White  | 235 | 235 | 235 |
