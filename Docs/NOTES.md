@@ -39,3 +39,9 @@ Precedent for the technique: More Beautiful Bodies (3341372760), `1.5/Patches/Fu
 for the Saurid `FurDef` (`PatchOperationFindMod`, then `PatchOperationReplace` on
 `/Defs/FurDef[defName="..."]/bodyTypeGraphicPaths/<Type>`, Baby pointed at the Child texture). It patches
 Child and Baby only. Vanilla Races Expanded - Saurid (2880990495) ships its own `FurDefs_ScaleSkin.xml`.
+
+## Decision (2026-10-30)
+
+Baby stays on Erin's `ERN_SwaddledBaby` (owner). The patch is `Mod/Patches/RhyaethScalySkin.xml`, six
+`PatchOperationReplace`, no `PatchOperationFindMod` because both mods are hard dependencies. Applied by hand
+to Erin's `FurDefs.xml` with `XmlDocument.SelectSingleNode`: the six xpaths match. Not yet played in game.

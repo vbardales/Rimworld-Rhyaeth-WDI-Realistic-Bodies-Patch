@@ -7,4 +7,5 @@ This file serves the repository and the writing of Steam patch notes; RimWorld d
 
 ### Added
 
-- Repository skeleton and `Mod/About/About.xml` with the two dependencies. No patch yet.
+- `Mod/Patches/RhyaethScalySkin.xml`: the `FurDef` `ERN_RhyaethBody` of Erin's Rhy'aeth now draws its Female, Male, Thin, Hulk, Fat and Child bodies with the `Pawn/ScalySkin/ScalySkin_<Type>` textures of WDI's Realistic Bodies. Baby keeps Erin's own swaddled-baby texture, WDI has none. One operation per body type, so a node that goes missing skips only itself.
+- Repository skeleton and `Mod/About/About.xml` with the two dependencies.

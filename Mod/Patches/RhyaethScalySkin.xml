@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<!-- Erin's Rhy'aeth draws its body through the FurDef ERN_RhyaethBody, one texture path per body type.
+	     Each path is replaced by its ScalySkin counterpart from WDI's Realistic Bodies. Baby is left on
+	     Erin's own swaddled-baby texture: WDI ships no baby texture. One operation per body type, so a
+	     missing node skips only itself. -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FurDef[defName="ERN_RhyaethBody"]/bodyTypeGraphicPaths/Female</xpath>
+		<value>
+			<Female>Pawn/ScalySkin/ScalySkin_Female</Female>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FurDef[defName="ERN_RhyaethBody"]/bodyTypeGraphicPaths/Male</xpath>
+		<value>
+			<Male>Pawn/ScalySkin/ScalySkin_Male</Male>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FurDef[defName="ERN_RhyaethBody"]/bodyTypeGraphicPaths/Thin</xpath>
+		<value>
+			<Thin>Pawn/ScalySkin/ScalySkin_Thin</Thin>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FurDef[defName="ERN_RhyaethBody"]/bodyTypeGraphicPaths/Hulk</xpath>
+		<value>
+			<Hulk>Pawn/ScalySkin/ScalySkin_Hulk</Hulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FurDef[defName="ERN_RhyaethBody"]/bodyTypeGraphicPaths/Fat</xpath>
+		<value>
+			<Fat>Pawn/ScalySkin/ScalySkin_Fat</Fat>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/FurDef[defName="ERN_RhyaethBody"]/bodyTypeGraphicPaths/Child</xpath>
+		<value>
+			<Child>Pawn/ScalySkin/ScalySkin_Child</Child>
+		</value>
+	</Operation>
+
+</Patch>
