@@ -52,3 +52,24 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     And Nelim's Pickle Tools: "Jet" has body type Child
     When I take a screenshot "rhyaeth-child"
     Then no errors were logged
+
+  Scenario Outline: the <colour> scales tint the scaly body
+    Given the save "test-colony" is loaded
+    And game speed is paused
+    And I close all dialogs
+    And Nelim's Pickle Tools: "Jet" gender is male
+    And Nelim's Pickle Tools: "Jet" xenotype is "ERN_Rhyaeth"
+    And Nelim's Pickle Tools: "Jet" body type is Male
+    And Nelim's Pickle Tools: "Jet" has the gene "ERN_Rhyaeth<colour>Scales"
+    And I wait 5 ticks
+    And game speed is paused
+    Then Nelim's Pickle Tools: "Jet" holds the gene "ERN_Rhyaeth<colour>Scales"
+    And Nelim's Pickle Tools: the fur of "Jet" is drawn from "Pawn/ScalySkin/ScalySkin_Male"
+    When I take a screenshot "rhyaeth-scales-<colour>"
+    Then no errors were logged
+
+    Examples:
+      | colour |
+      | Green  |
+      | Bronze |
+      | White  |

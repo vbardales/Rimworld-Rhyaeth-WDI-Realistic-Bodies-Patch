@@ -18,7 +18,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
-  - "2026-10-30: unverified: 7.c XML test: shared patch-xpath script asked of Audit, none kept; 7.d B5 scale colour step not yet in the suite; B6 fur-path step added (NPT, not played); suite not yet played"
+  - "2026-10-30: unverified: 7.c XML test: shared patch-xpath script asked of Audit, none kept; 7.d B6 fur-path step added (NPT, not played); suite not yet played"
   - "2026-10-30: unverified: translation: confirm in game at playTests (8.i) that no raw key or missing text shows; the mod adds none"
   - "2026-10-30: unverified: settings: no Mod options entry and no MainButtons shortcut, checked from files only; confirm in game at playTests (8.h)"
   - "2026-10-30: unverified: patch written, applied only to Erin FurDefs.xml by xpath; in-game look (tint, scales on each body type) not yet played"
