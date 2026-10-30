@@ -5,7 +5,7 @@ repo: Rimworld-Rhyaeth-WDI-Realistic-Bodies-Patch
 remote: https://github.com/vbardales/Rimworld-Rhyaeth-WDI-Realistic-Bodies-Patch.git
 visibility: public
 detached: yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence: original
 licence_at: "2026-10-30: original creation, an XML patch written here; it only points at texture paths of WDI's Realistic Bodies and at a FurDef of Erin's Rhy'aeth, both required and none copied. MIT."
 upstream_mod_remotes: N/A
@@ -18,12 +18,12 @@ workshop: none
 published: no
 tested_on: never
 remaining:
-  - "2026-10-30: unverified: 7.c XML test: shared patch-xpath script asked of Audit, none kept; 7.d B6 fur-path step added (NPT, not played); suite not yet played"
+  - "2026-10-30: unverified: playTests: Tests/Pickle suite (01 textures, 02 bodies, scales) written, never played; NPT steps fur path and skin colour compiled, not played; needs a Pickle ticket via the TM"
   - "2026-10-30: unverified: translation: confirm in game at playTests (8.i) that no raw key or missing text shows; the mod adds none"
   - "2026-10-30: unverified: settings: no Mod options entry and no MainButtons shortcut, checked from files only; confirm in game at playTests (8.h)"
   - "2026-10-30: unverified: patch written, applied only to Erin FurDefs.xml by xpath; in-game look (tint, scales on each body type) not yet played"
 updated: 2026-10-30
-protocols_read_sha: c6de33235d7caf727b37773a83d706ac8e820aaa
+protocols_read_sha: b16f3cc69bacfeaf20e238a4c99f0a33831d966a
 ---
 
 # Rhyaeth WDI Realistic Bodies Patch: status
@@ -72,3 +72,12 @@ Revision: the commit that carries this section. Files read: `git ls-files Mod`, 
 - Commands: `Check-Translations.ps1 -ModRoot` PASS with 0 source texts; `Make-FrenchReview.ps1 -ModRoot` written, it says the mod adds no player-facing strings. `Check-DefInjected.ps1` is for translation mods, not applicable.
 - French review by Virginie: nothing to review, `FRENCH_REVIEW.md` says so. The review line stays hers and empty.
 - In game: raw-key and fallback check is `unverified` until `playTests`.
+
+## Tests (2026-10-30, writeTests)
+
+Offline, on revision `14d0677` of this repository, Erin's Rhy'aeth 3707527452 and WDI's Realistic Bodies 3527486510 as installed:
+- `Test-PatchXml.ps1` (shared, protocols repo): six `PatchOperationReplace`, six xpaths matched, six texture paths found, exit 0. Output in `TESTING.md`.
+- `Check-Steps.ps1`: 2 features, 4 scenario blocks, every step line resolves to one expression. `Check-Translations.ps1`: PASS, 0 texts. `Check-Status.ps1`: 0 errors.
+- No C#: no unit tests, not applicable. No local script in this repository, so nothing to declare in `scripts/LOCAL_SCRIPTS.md`.
+- Pickle suites written, not played: `Tests/Pickle/`, pass `wsl-deps.rhyaeth.map`, features `01-textures-resolve`, `02-rhyaeth-bodies` (bodies, child, scale colours; every capture `@review`). Behaviours B1 to B7 in `TESTING.md`.
+- Translations: `not_applicable`, see Translation audit.

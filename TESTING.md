@@ -18,8 +18,19 @@ A green capture says a file was taken, not that the scales are WDI's: each `@rev
 
 ## Offline
 
-`scripts/Check-Status.ps1`, `Check-ModBasics.ps1`, `Check-Translations.ps1` (0 texts) and `Check-Steps.ps1` (all step lines resolve) pass. B1 was checked by hand on 2026-10-30 with `XmlDocument.SelectSingleNode` on Erin's file: six xpaths matched. That is not a kept test: a script kept in this repository is a local script, and twelve mods already carry their own `test-xml.ps1`, so the shared one is asked of the Audit session first.
+`scripts/Check-Status.ps1`, `Check-ModBasics.ps1`, `Check-Translations.ps1` (0 texts) and `Check-Steps.ps1` (all step lines resolve) pass (`Check-ModBasics` still reports `Mod/About/Preview.png` missing, made at `mountPreview`). No C#, so no unit tests (not applicable). The XML test is the shared `Test-PatchXml.ps1`, below.
 
 ## In game
 
 `Tests/Pickle/`, pass `wsl-deps.rhyaeth.map`, never launched by a session: filed with `Submit-PickleRun.ps1`, results by `RUN_DONE`. Not played yet.
+
+### XML test (B1, B2, B3)
+
+Shared script, no local copy: `scripts/Test-PatchXml.ps1` of the protocols repository (Audit, 2026-10-30).
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/Test-PatchXml.ps1 -ModRoot RhyaethWdiRealisticBodiesPatch `
+  -TargetDefs "<workshop>/3707527452/1.6/Defs/GeneDefs/FurDefs.xml" -TextureRoots "<workshop>/3527486510/Textures"
+```
+
+Replayed 2026-10-30: six `PatchOperationReplace`, all six xpaths matched (old value to new value printed), all six paths found as `_south.png` in WDI, exit 0. Without `-TextureRoots` the script reports six failures, exit 1 (Audit's negative case). B3 (no `Baby` operation): read in the patch file, six operations named Female, Male, Thin, Hulk, Fat, Child.
