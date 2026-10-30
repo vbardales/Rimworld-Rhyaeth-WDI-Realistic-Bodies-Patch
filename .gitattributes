@@ -19,3 +19,6 @@
 *.png binary
 *.dll binary
 *.pdb binary
+
+# Pass maps are read by a Linux shell line by line: a CR would stick to the last field.
+*.map   text eol=lf
