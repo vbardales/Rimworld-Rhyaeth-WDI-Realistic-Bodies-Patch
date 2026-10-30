@@ -18,6 +18,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-10-30: unverified: 1.a duplicate check, no Workshop search run (needs Virginie go, AGENTS.md no-grep rule); NPT only reported no installed mod applies ScalySkin to Rhyaeth"
   - "2026-10-30: feature: the patch itself, see Docs/NOTES.md (PatchOperationReplace on FurDef ERN_RhyaethBody)"
 updated: 2026-10-30
 protocols_read_sha: c6de33235d7caf727b37773a83d706ac8e820aaa
