@@ -46,3 +46,9 @@ Tests/Pickle/evidence/
 Tests/Pickle/Evidence/
 *.webm
 Art/.render/
+
+# Showcase notes: working prompt for the Preview illustration, deleted once Preview-source.png is received.
+PROMPT_*.md
+
+# Reproducible Preview diagnostics generated locally by the shared renderer.
+Art/.render/

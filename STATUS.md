@@ -18,7 +18,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
-  - "2026-10-30: unverified: 2.a ModIcon-source.png and 2.e Preview-source.png come from Virginie, none created"
+  - "2026-10-30: unverified: 2.e Preview-source.png comes from Virginie (prompt PROMPT_RHYAETH-WDI-REALISTIC-BODIES-PATCH.md ready, ignored by git); 2.a ModIcon-source.png delivered, 2.b derivatives made"
   - "2026-10-30: feature: the patch itself, see Docs/NOTES.md (PatchOperationReplace on FurDef ERN_RhyaethBody)"
 updated: 2026-10-30
 protocols_read_sha: c6de33235d7caf727b37773a83d706ac8e820aaa
