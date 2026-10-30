@@ -52,3 +52,9 @@ PROMPT_*.md
 
 # Reproducible Preview diagnostics generated locally by the shared renderer.
 Art/.render/
+
+# Test evidence stays on disk, never in git: screenshots and Player.log grow without limit.
+Tests/Pickle/Evidence/
+Tests/Pickle/Inbox/
+Tests/Pickle/Parked/
+Tests/Pickle/evidence/

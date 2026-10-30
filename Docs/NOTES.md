@@ -20,7 +20,7 @@ The graphics live in the `FurDef` of the same name (`noGraphic` true), `bodyType
 
 Textures only, no Defs: `Pawn/ScalySkin/ScalySkin_<Child|Fat|Fat_Female|Female|Hulk|Hulk_Female|Male|Thin|Thin_Female>_<east|north|south>`.
 No Baby texture. `Fat_Female`, `Hulk_Female` and `Thin_Female` match no vanilla `BodyTypeDef`
-(WDI itself depends on Female Body Variants, `tiagocc0.FemaleBodyVariants`, which was not installed on the machine).
+(WDI itself depends on Female Body Variants, `tiagocc0.FemaleBodyVariants`; the Continued version 3798082132 is installed, and it loads female variants of the Naked_Thin/Fat/Hulk textures by name, which may or may not apply to a fur path).
 
 ## Patch to write
 

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Rhyaeth WDI Realistic Bodies Patch - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.rhyaethwdirealisticbodiespatch.pickletests</packageId>
+  <supportedVersions><li>1.6</li></supportedVersions>
+  <description>In-game functional tests for Rhyaeth WDI Realistic Bodies Patch, run by Pickle. Development only: never published.</description>
+  <modDependencies>
+    <li><packageId>nelim.rhyaethwdirealisticbodiespatch</packageId><displayName>Rhyaeth WDI Realistic Bodies Patch</displayName></li>
+    <li><packageId>rimworks.pickle</packageId><displayName>Pickle</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter><li>nelim.rhyaethwdirealisticbodiespatch</li><li>rimworks.pickle</li></loadAfter>
+</ModMetaData>

@@ -18,6 +18,7 @@ workshop: none
 published: no
 tested_on: never
 remaining:
+  - "2026-10-30: unverified: 7.c XML test: shared patch-xpath script asked of Audit, none kept; 7.d B5 scale colour step and B6 fur path step (asked of NPT) not yet in the suite; suite not yet played"
   - "2026-10-30: unverified: translation: confirm in game at playTests (8.i) that no raw key or missing text shows; the mod adds none"
   - "2026-10-30: unverified: settings: no Mod options entry and no MainButtons shortcut, checked from files only; confirm in game at playTests (8.h)"
   - "2026-10-30: unverified: patch written, applied only to Erin FurDefs.xml by xpath; in-game look (tint, scales on each body type) not yet played"
@@ -45,7 +46,7 @@ Read from the patch and from `Mod/About/About.xml`, not from intent.
 
 - Optional integrations: none. The patch is unguarded because both mods are hard dependencies, so it never loads without them.
 - DLC: none named by this mod. Biotech comes through Erin's Rhy'aeth, which declares it.
-- Transitive: Erin needs Vanilla Expanded Framework; WDI declares Female Body Variants (`tiagocc0.FemaleBodyVariants`, not installed on the machine, not used here: only the six vanilla body types are patched).
+- Transitive: Erin needs Vanilla Expanded Framework; WDI declares Female Body Variants (`tiagocc0.FemaleBodyVariants`; the Continued version 3798082132 is installed, the original 3105933543 is not). It is not a dependency of this mod; it loads a female variant of the Naked_Thin/Fat/Hulk body textures by name, and whether it also reroutes the fur paths of this patch is unverified until `playTests`.
 - `loadAfter`: `Ludeon.RimWorld`, `Erin.Rhyaeth`, `WDI.Realistic.Bodies`. `incompatibleWith`: none.
 - Game version: `supportedVersions` 1.6 only; no `LoadFolders.xml`, no version folder. Erin supports 1.6 only; WDI 1.5 to 1.7.
 - Load order: `scripts/sort-load-order.py --version 1.6 --explain` on the three About.xml, exit 0, order Erin, WDI, this mod, no cycle.

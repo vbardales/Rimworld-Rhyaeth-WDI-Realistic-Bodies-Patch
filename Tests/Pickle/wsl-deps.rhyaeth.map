@@ -1,0 +1,10 @@
+# Minimal pass: the mod, its two hard dependencies (ids in wsl-ids.map) and what they need to load.
+# Erin's Rhy'aeth needs Biotech (staged by the script) and Vanilla Expanded Framework; WDI's Realistic Bodies
+# declares Female Body Variants. TextureOwner answers which running mod ships a texture; ColonistRace builds the
+# Rhy'aeth colonist and fixes its body type.
+#
+#   Submit-PickleRun.ps1 -Mod RhyaethWdiRealisticBodiesPatch -DepMap wsl-deps.rhyaeth.map -EvidenceDir Tests/Pickle/Inbox/<run>
+OskarPotocki.VanillaFactionsExpanded.Core 2023507013
+tiagocc0.FemaleBodyVariants 3798082132
+nelim.pickletools.textureowner path:PickleTools/TextureOwner/Mod
+nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
