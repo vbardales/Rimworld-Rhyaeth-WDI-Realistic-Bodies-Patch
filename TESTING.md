@@ -11,7 +11,7 @@ The mod is one XML patch, `Mod/Patches/RhyaethScalySkin.xml`: six `PatchOperatio
 | B3 | Baby is untouched | the patch file | read it | no operation names `Baby` | offline XML test |
 | B4 | A Rhy'aeth colonist of each body type is drawn with the scaly body | `test-colony`, Jet as Rhy'aeth, gender, body type | load, set, photograph | no error logged; scales read as WDI's on the capture | `02-rhyaeth-bodies.feature` (`@review`, 9 captures) |
 | B5 | The scale colour genes still tint the new texture | same, a colour gene | photograph | scales tinted, not grey | not written yet: needs a step that gives a scale colour gene |
-| B6 | The fur node draws the patched path | same | read the fur node of the pawn | path is `Pawn/ScalySkin/ScalySkin_<Type>` | **missing step**, asked of NPT 2026-10-30 |
+| B6 | The fur node draws the patched path | same | read the fur node of the pawn | path is `Pawn/ScalySkin/ScalySkin_<Type>` (a `_Female` suffix tolerated) | `02-rhyaeth-bodies.feature`, NPT step `the fur of {string} is drawn from {string}` (compiled by NPT 2026-10-30, not played) |
 | B7 | Female Body Variants does not break the female Thin, Fat, Hulk bodies | same, female | photograph | bodies drawn, no error | `02-rhyaeth-bodies.feature` (female rows) |
 
 A green capture says a file was taken, not that the scales are WDI's: each `@review` picture is opened and read.
