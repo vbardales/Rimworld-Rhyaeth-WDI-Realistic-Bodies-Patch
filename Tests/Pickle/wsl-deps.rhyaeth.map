@@ -8,3 +8,6 @@ OskarPotocki.VanillaFactionsExpanded.Core 2023507013
 tiagocc0.FemaleBodyVariants 3798082132
 nelim.pickletools.textureowner path:PickleTools/TextureOwner/Mod
 nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
+# Camera: centres the capture on Jet. SimpleCameraSetting (3232415388) keeps the root size asked (the game alone stops at 11).
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
+ray1203.SimpleCameraSetting 3232415388

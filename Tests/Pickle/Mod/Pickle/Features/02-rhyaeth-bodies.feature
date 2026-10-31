@@ -1,4 +1,4 @@
-@review @requires:nelim.pickletools.colonistrace
+@review @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.camerazoom
 Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
 
   # Rhy'aeth is a Biotech xenotype. The colonist is built from the test-colony fixture (Jet): xenotype ERN_Rhyaeth, then the
@@ -7,7 +7,8 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
   # was taken. The Baby body (Erin's swaddled-baby texture, left unpatched) is not photographed here.
   # The fur path is asserted by NPT's ColonistRace step (tolerates a direction or _Female suffix, so Thin female may read ScalySkin_Thin_Female).
   # Scale colours: the drawn colour can differ a little from the def value (randomBrightnessFactor 0.18, read of NPT); the expected rgb is the def value, read the failure line before changing it.
-  # NOT PLAYED YET.
+  # Captures: the camera is centred on Jet at root size 6 (SimpleCameraSetting keeps the asked size; the game alone stops at 11). First run framed nothing: the whole map, Jet unseen.
+  # NOT PLAYED YET with the camera step.
 
   Scenario Outline: a <gender> Rhy'aeth with the <type> body
     Given the save "test-colony" is loaded
@@ -23,7 +24,8 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     And Nelim's Pickle Tools: the fur nodes of "Jet" are logged
     And Nelim's Pickle Tools: the fur of "Jet" is drawn from "Pawn/ScalySkin/ScalySkin_<type>"
     And Nelim's Pickle Tools: "Jet" has body type <type>
-    When I take a screenshot "rhyaeth-<gender>-<type>"
+    When Nelim's Pickle Tools: the camera is centered on "Jet" at root size 6
+    And I take a screenshot "rhyaeth-<gender>-<type>"
     Then no errors were logged
 
     Examples:
@@ -51,7 +53,8 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     And Nelim's Pickle Tools: the fur nodes of "Jet" are logged
     And Nelim's Pickle Tools: the fur of "Jet" is drawn from "Pawn/ScalySkin/ScalySkin_Child"
     And Nelim's Pickle Tools: "Jet" has body type Child
-    When I take a screenshot "rhyaeth-child"
+    When Nelim's Pickle Tools: the camera is centered on "Jet" at root size 6
+    And I take a screenshot "rhyaeth-child"
     Then no errors were logged
 
   Scenario Outline: the <colour> scales tint the scaly body
@@ -68,7 +71,8 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     Then Nelim's Pickle Tools: "Jet" holds the gene "ERN_Rhyaeth<colour>Scales"
     And Nelim's Pickle Tools: the fur of "Jet" is drawn from "Pawn/ScalySkin/ScalySkin_Male"
     And Nelim's Pickle Tools: "Jet" skin colour reads rgb (<r>, <g>, <b>)
-    When I take a screenshot "rhyaeth-scales-<colour>"
+    When Nelim's Pickle Tools: the camera is centered on "Jet" at root size 6
+    And I take a screenshot "rhyaeth-scales-<colour>"
     Then no errors were logged
 
     Examples:
