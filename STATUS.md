@@ -23,7 +23,7 @@ remaining:
   - "2026-10-30: unverified: settings: no Mod options entry and no MainButtons shortcut, checked from files only; confirm in game at playTests (8.h)"
   - "2026-10-30: unverified: patch written, applied only to Erin FurDefs.xml by xpath; in-game look (tint, scales on each body type) not yet played"
 updated: 2026-10-30
-protocols_read_sha: 1eb4336d9a31aa247d30c62c5e7d04f663df78d9
+protocols_read_sha: 7fb78fd9e3344d46a904df6458038a34c7f8ff3d
 ---
 
 # Rhyaeth WDI Realistic Bodies Patch: status
