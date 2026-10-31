@@ -19,7 +19,7 @@ published: no
 tested_on: "2026-10-31: 1.6, English, repository sha 37b76a4, Pickle ticket 2ece, 18 of 18 passed (docs/runs/history.md)"
 remaining:
   - "2026-10-31: playTests: initial diagnostic green, ticket 2ece, 18 of 18, English, sha 37b76a4 (Docs/runs/history.md); evidence minified in Tests/Pickle/Evidence/initial-english; no @wip. TM said '1 tentative': not visible in summary.json (all attempts 1), cause unknown"
-  - "2026-10-31: unverified: 8.d captures of ticket 2ece are useless (Virginie: nobody on screen, portrait too small; whole map, Jet unseen). Fix 34aaf84: camera centred on Jet at root size 6, SimpleCameraSetting staged. Ticket ba58 (@review, 12 scenarios) filed to retake them; Virginie to look at Tests/Pickle/Inbox/camera-framing/screenshots"
+  - "2026-11-01: unverified: 8.d ticket ba58 (12 scenarios, 12/12 green, root size 6) framed Jet too far (Virginie). Fix 31f174e: root size 3. Ticket a381 queued (1 scenario, male Male body, evidence Tests/Pickle/Inbox/camera-zoom) to check the framing before the 12 are replayed. NSB asked about colonist Baleste (Rhy'aeth female Hulk): answered 2026-11-01, NSB files its own ticket"
   - "2026-10-31: unverified: 8.i Player.log not read (run minified before reading, Player.log dropped); raw key and error check needs a read of a new run's log"
   - "2026-10-31: unverified: 8.h no Mod options entry and no MainButtons shortcut, files only; no Pickle step checks it"
   - "2026-10-31: unverified: 8.m code review (code_review_sha) not done; 1.7 pass (tested_1_7) not started; French run not played (not_applicable, no text)"
