@@ -16,13 +16,14 @@ translation_fr: not_applicable
 dependencies: complete
 workshop: none
 published: no
-tested_on: never
+tested_on: "2026-10-31: 1.6, English, repository sha 37b76a4, Pickle ticket 2ece, 18 of 18 passed (docs/runs/history.md)"
 remaining:
-  - "2026-10-30: unverified: playTests: Tests/Pickle suite (01 textures, 02 bodies, scales) written, never played; NPT steps fur path and skin colour compiled, not played; needs a Pickle ticket via the TM"
-  - "2026-10-30: unverified: translation: confirm in game at playTests (8.i) that no raw key or missing text shows; the mod adds none"
-  - "2026-10-30: unverified: settings: no Mod options entry and no MainButtons shortcut, checked from files only; confirm in game at playTests (8.h)"
-  - "2026-10-30: unverified: patch written, applied only to Erin FurDefs.xml by xpath; in-game look (tint, scales on each body type) not yet played"
-updated: 2026-10-30
+  - "2026-10-31: playTests: initial diagnostic green, ticket 2ece, 18 of 18, English, sha 37b76a4 (Docs/runs/history.md); evidence minified in Tests/Pickle/Evidence/initial-english; no @wip. TM said '1 tentative': not visible in summary.json (all attempts 1), cause unknown"
+  - "2026-10-31: unverified: 8.d captures: 12 @review PNG opened, full-map view, pawn portrait only shows Male body yellowish and Green scales green; body shape and tint on each type not judged from them, Virginie to look at Tests/Pickle/Evidence/initial-english/screenshots"
+  - "2026-10-31: unverified: 8.i Player.log not read (run minified before reading, Player.log dropped); raw key and error check needs a read of a new run's log"
+  - "2026-10-31: unverified: 8.h no Mod options entry and no MainButtons shortcut, files only; no Pickle step checks it"
+  - "2026-10-31: unverified: 8.m code review (code_review_sha) not done; 1.7 pass (tested_1_7) not started; French run not played (not_applicable, no text)"
+updated: 2026-10-31
 protocols_read_sha: 7fb78fd9e3344d46a904df6458038a34c7f8ff3d
 ---
 
