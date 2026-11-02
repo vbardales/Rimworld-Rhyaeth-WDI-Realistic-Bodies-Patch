@@ -14,3 +14,7 @@ ray1203.SimpleCameraSetting 3232415388
 # Studio: hides the UI for the captures (studio mode, colonist bar, tooltips, readout, brackets, mouse parking).
 nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
 nelim.pickletools.clickdiagnostics path:PickleTools/ClickDiagnostics/Mod
+# Validated look (Virginie, 2026-11-02, NSB profiles): skin genes GES_Skin_* (Genes Expanded Skin), hairstyle Roo_Royal_DragonHD (HD Hair), VHE_BattleBraid (Vanilla Hair Expanded).
+LazyFridayStudio.GenesExpandedSkin 3214172563
+rooboid.hdhair.continued 3559870636
+VanillaExpanded.VHE 1888705256

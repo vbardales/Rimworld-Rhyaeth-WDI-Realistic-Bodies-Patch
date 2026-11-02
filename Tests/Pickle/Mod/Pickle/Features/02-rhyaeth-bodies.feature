@@ -8,6 +8,7 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
   # The fur path is asserted by NPT's ColonistRace step (tolerates a direction or _Female suffix, so Thin female may read ScalySkin_Thin_Female).
   # Scale colours: the drawn colour can differ a little from the def value (randomBrightnessFactor 0.18, read of NPT); the expected rgb is the def value, read the failure line before changing it.
   # Captures: the camera is centred on Jet at root size 3 (SimpleCameraSetting keeps the asked size; the game alone stops at 11). First run framed nothing: the whole map, Jet unseen.
+  # Look validated by Virginie 2026-11-02 (NSB profiles, Docs/CELESTE-PROFIL.md and IORI-PROFIL.md): female = Celeste (skin GES_Skin_SummerSky, hair gene Hair_LightPurple, hairstyle Roo_Royal_DragonHD), male = Iori (GES_Skin_Burgundy, Hair_SnowWhite, VHE_BattleBraid). Only skin, hair colour and hairstyle so far: eyes, horns, ears, face parts and clothes are still proposals or not taken. Outline only: the child and scale-colour scenarios keep the plain Rhy.
   # The colonist "Rhy" is created by step (kind Colonist, idle, no job, nothing in the hands): Jet of the fixture carried a rock in the first zoomed capture (Virginie, 2026-11-02). Studio steps hide the UI (NSB recipe).
 
   Scenario Outline: a <gender> Rhy'aeth with the <type> body
@@ -25,6 +26,10 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     And Nelim's Pickle Tools: "Rhy" gender is <gender>
     And Nelim's Pickle Tools: "Rhy" xenotype is "ERN_Rhyaeth"
     And Nelim's Pickle Tools: "Rhy" body type is <type>
+    And Nelim's Pickle Tools: "Rhy" has the gene "<skin>"
+    And Nelim's Pickle Tools: "Rhy" has the gene "<hairgene>"
+    And Nelim's Pickle Tools: "Rhy" hairstyle is "<hairstyle>"
+    And Nelim's Pickle Tools: "Rhy" hair colour is taken from its genes
     And I wait 5 ticks
     And game speed is paused
     Then Nelim's Pickle Tools: "Rhy" has xenotype "ERN_Rhyaeth"
@@ -37,15 +42,15 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     Then no errors were logged
 
     Examples:
-      | gender | type   |
-      | male   | Male   |
-      | female | Female |
-      | male   | Thin   |
-      | female | Thin   |
-      | male   | Fat    |
-      | female | Fat    |
-      | male   | Hulk   |
-      | female | Hulk   |
+      | gender | type   | skin               | hairgene         | hairstyle          |
+      | male   | Male   | GES_Skin_Burgundy  | Hair_SnowWhite   | VHE_BattleBraid    |
+      | female | Female | GES_Skin_SummerSky | Hair_LightPurple | Roo_Royal_DragonHD |
+      | male   | Thin   | GES_Skin_Burgundy  | Hair_SnowWhite   | VHE_BattleBraid    |
+      | female | Thin   | GES_Skin_SummerSky | Hair_LightPurple | Roo_Royal_DragonHD |
+      | male   | Fat    | GES_Skin_Burgundy  | Hair_SnowWhite   | VHE_BattleBraid    |
+      | female | Fat    | GES_Skin_SummerSky | Hair_LightPurple | Roo_Royal_DragonHD |
+      | male   | Hulk   | GES_Skin_Burgundy  | Hair_SnowWhite   | VHE_BattleBraid    |
+      | female | Hulk   | GES_Skin_SummerSky | Hair_LightPurple | Roo_Royal_DragonHD |
 
   Scenario: a Rhy'aeth child with the Child body
     Given the save "test-colony" is loaded
