@@ -55,7 +55,7 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
       | male   | Hulk   | GES_Skin_Burgundy  | Hair_SnowWhite   | VHE_BattleBraid    |
       | female | Hulk   | GES_Skin_SummerSky | Hair_LightPurple | Roo_Royal_DragonHD |
 
-  Scenario Outline: a <gender> Rhy'aeth, body only, <type>
+  Scenario Outline: a <gender> Rhy'aeth shown body only with the <type> body
     Given the save "test-colony" is loaded
     And game speed is paused
     And I close all dialogs
