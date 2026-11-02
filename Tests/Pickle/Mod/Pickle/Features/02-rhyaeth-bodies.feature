@@ -37,7 +37,9 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     And Nelim's Pickle Tools: the fur nodes of "Rhy" are logged
     And Nelim's Pickle Tools: the fur of "Rhy" is drawn from "Pawn/ScalySkin/ScalySkin_<type>"
     And Nelim's Pickle Tools: "Rhy" has body type <type>
+    And Nelim's Pickle Tools: "Rhy" faces South
     When Nelim's Pickle Tools: the camera is centered on "Rhy" at root size 3
+    And Nelim's Pickle Tools: I let 5 frames pass
     And I take a screenshot "rhyaeth-<gender>-<type>"
     Then no errors were logged
 
