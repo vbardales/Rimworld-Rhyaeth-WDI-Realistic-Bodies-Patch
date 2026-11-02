@@ -204,6 +204,51 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
       | male   | Hulk   | GES_Skin_Burgundy  | Hair_SnowWhite   | VHE_BattleBraid    |
       | female | Hulk   | GES_Skin_SummerSky | Hair_LightPurple | Roo_Royal_DragonHD |
 
+  # Virginie, 2026-11-02: one capture of the female Hulk, naked, from the front, the back and the side (North = back, East = profile).
+  Scenario Outline: the Hulk female turntable seen from <facing>
+    Given the save "test-colony" is loaded
+    And game speed is paused
+    And I close all dialogs
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: a colonist "Rhy" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Rhy" gender is female
+    And Nelim's Pickle Tools: "Rhy" xenotype is "ERN_Rhyaeth"
+    And Nelim's Pickle Tools: "Rhy" loses the gene "ERN_RhyaethWings"
+    And Nelim's Pickle Tools: "Rhy" loses the gene "ERN_RhyaethTail_Simple"
+    And Nelim's Pickle Tools: "Rhy" loses the gene "ERN_RhyaethTail_Spade"
+    And Nelim's Pickle Tools: "Rhy" loses the gene "ERN_RhyaethTail_Spiked"
+    And Nelim's Pickle Tools: "Rhy" loses the gene "ERN_RhyaethTail_Frilled"
+    And Nelim's Pickle Tools: "Rhy" body type is Hulk
+    And Nelim's Pickle Tools: "Rhy" has the gene "GES_Skin_SummerSky"
+    And Nelim's Pickle Tools: "Rhy" has the gene "Hair_LightPurple"
+    And Nelim's Pickle Tools: "Rhy" hairstyle is "Roo_Royal_DragonHD"
+    And Nelim's Pickle Tools: "Rhy" hair colour is taken from its genes
+    And Nelim's Pickle Tools: "Rhy" is undressed
+    And Nelim's Pickle Tools: the loose things within 3 cells of "Rhy" are removed
+    And I wait 5 ticks
+    And game speed is paused
+    Then Nelim's Pickle Tools: "Rhy" has xenotype "ERN_Rhyaeth"
+    And Nelim's Pickle Tools: "Rhy" holds the gene "ERN_RhyaethBody"
+    And Nelim's Pickle Tools: the fur of "Rhy" is drawn from "Pawn/ScalySkin/ScalySkin_Hulk"
+    And Nelim's Pickle Tools: "Rhy" has body type Hulk
+    And Nelim's Pickle Tools: "Rhy" faces <facing>
+    When Nelim's Pickle Tools: the camera is centered on "Rhy" at root size 3
+    And Nelim's Pickle Tools: I let 5 frames pass
+    And I take a screenshot "rhyaeth-hulk-female-<facing>"
+    Then no errors were logged
+
+    Examples:
+      | facing |
+      | South  |
+      | North  |
+      | East   |
+
   Scenario: a Rhy'aeth child with the Child body
     Given the save "test-colony" is loaded
     And game speed is paused

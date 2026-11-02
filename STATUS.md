@@ -25,7 +25,7 @@ remaining:
   - "2026-10-31: unverified: 8.h no Mod options entry and no MainButtons shortcut, files only; no Pickle step checks it"
   - "2026-10-31: unverified: 8.m code review (code_review_sha) not done; 1.7 pass (tested_1_7) not started; French run not played (not_applicable, no text)"
 updated: 2026-10-31
-protocols_read_sha: 8e3cb16c7bbe8c4d79e6654219c8b287c006ec65
+protocols_read_sha: 367e9834a3a6017bdacfb343dbe1dbb8870bf0d5
 ---
 
 # Rhyaeth WDI Realistic Bodies Patch: status
