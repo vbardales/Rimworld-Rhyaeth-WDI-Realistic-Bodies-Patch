@@ -11,3 +11,6 @@ nelim.pickletools.colonistrace path:PickleTools/ColonistRace/Mod
 # Camera: centres the capture on Jet. SimpleCameraSetting (3232415388) keeps the root size asked (the game alone stops at 11).
 nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
 ray1203.SimpleCameraSetting 3232415388
+# Studio: hides the UI for the captures (studio mode, colonist bar, tooltips, readout, brackets, mouse parking).
+nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
+nelim.pickletools.clickdiagnostics path:PickleTools/ClickDiagnostics/Mod

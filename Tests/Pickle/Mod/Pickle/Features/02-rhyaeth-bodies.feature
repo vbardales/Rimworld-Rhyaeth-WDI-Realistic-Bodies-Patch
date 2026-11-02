@@ -1,4 +1,4 @@
-@review @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.camerazoom
+@review @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.camerazoom @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.clickdiagnostics
 Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
 
   # Rhy'aeth is a Biotech xenotype. The colonist is built from the test-colony fixture (Jet): xenotype ERN_Rhyaeth, then the
@@ -8,23 +8,31 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
   # The fur path is asserted by NPT's ColonistRace step (tolerates a direction or _Female suffix, so Thin female may read ScalySkin_Thin_Female).
   # Scale colours: the drawn colour can differ a little from the def value (randomBrightnessFactor 0.18, read of NPT); the expected rgb is the def value, read the failure line before changing it.
   # Captures: the camera is centred on Jet at root size 3 (SimpleCameraSetting keeps the asked size; the game alone stops at 11). First run framed nothing: the whole map, Jet unseen.
-  # NOT PLAYED YET with the camera step.
+  # The colonist "Rhy" is created by step (kind Colonist, idle, no job, nothing in the hands): Jet of the fixture carried a rock in the first zoomed capture (Virginie, 2026-11-02). Studio steps hide the UI (NSB recipe).
 
   Scenario Outline: a <gender> Rhy'aeth with the <type> body
     Given the save "test-colony" is loaded
     And game speed is paused
     And I close all dialogs
-    And Nelim's Pickle Tools: "Jet" gender is <gender>
-    And Nelim's Pickle Tools: "Jet" xenotype is "ERN_Rhyaeth"
-    And Nelim's Pickle Tools: "Jet" body type is <type>
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: a colonist "Rhy" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Rhy" gender is <gender>
+    And Nelim's Pickle Tools: "Rhy" xenotype is "ERN_Rhyaeth"
+    And Nelim's Pickle Tools: "Rhy" body type is <type>
     And I wait 5 ticks
     And game speed is paused
-    Then Nelim's Pickle Tools: "Jet" has xenotype "ERN_Rhyaeth"
-    And Nelim's Pickle Tools: "Jet" holds the gene "ERN_RhyaethBody"
-    And Nelim's Pickle Tools: the fur nodes of "Jet" are logged
-    And Nelim's Pickle Tools: the fur of "Jet" is drawn from "Pawn/ScalySkin/ScalySkin_<type>"
-    And Nelim's Pickle Tools: "Jet" has body type <type>
-    When Nelim's Pickle Tools: the camera is centered on "Jet" at root size 3
+    Then Nelim's Pickle Tools: "Rhy" has xenotype "ERN_Rhyaeth"
+    And Nelim's Pickle Tools: "Rhy" holds the gene "ERN_RhyaethBody"
+    And Nelim's Pickle Tools: the fur nodes of "Rhy" are logged
+    And Nelim's Pickle Tools: the fur of "Rhy" is drawn from "Pawn/ScalySkin/ScalySkin_<type>"
+    And Nelim's Pickle Tools: "Rhy" has body type <type>
+    When Nelim's Pickle Tools: the camera is centered on "Rhy" at root size 3
     And I take a screenshot "rhyaeth-<gender>-<type>"
     Then no errors were logged
 
@@ -43,17 +51,25 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     Given the save "test-colony" is loaded
     And game speed is paused
     And I close all dialogs
-    And "Jet" is 8 years old
-    And Nelim's Pickle Tools: "Jet" xenotype is "ERN_Rhyaeth"
-    And Nelim's Pickle Tools: "Jet" body type is Child
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: a colonist "Rhy" of kind "Colonist" exists
+    And "Rhy" is 8 years old
+    And Nelim's Pickle Tools: "Rhy" xenotype is "ERN_Rhyaeth"
+    And Nelim's Pickle Tools: "Rhy" body type is Child
     And I wait 5 ticks
     And game speed is paused
-    Then Nelim's Pickle Tools: "Jet" has xenotype "ERN_Rhyaeth"
-    And Nelim's Pickle Tools: "Jet" is at the Child stage of life
-    And Nelim's Pickle Tools: the fur nodes of "Jet" are logged
-    And Nelim's Pickle Tools: the fur of "Jet" is drawn from "Pawn/ScalySkin/ScalySkin_Child"
-    And Nelim's Pickle Tools: "Jet" has body type Child
-    When Nelim's Pickle Tools: the camera is centered on "Jet" at root size 3
+    Then Nelim's Pickle Tools: "Rhy" has xenotype "ERN_Rhyaeth"
+    And Nelim's Pickle Tools: "Rhy" is at the Child stage of life
+    And Nelim's Pickle Tools: the fur nodes of "Rhy" are logged
+    And Nelim's Pickle Tools: the fur of "Rhy" is drawn from "Pawn/ScalySkin/ScalySkin_Child"
+    And Nelim's Pickle Tools: "Rhy" has body type Child
+    When Nelim's Pickle Tools: the camera is centered on "Rhy" at root size 3
     And I take a screenshot "rhyaeth-child"
     Then no errors were logged
 
@@ -61,17 +77,25 @@ Feature: A Rhy'aeth colonist wears the scaly body of WDI's Realistic Bodies
     Given the save "test-colony" is loaded
     And game speed is paused
     And I close all dialogs
-    And Nelim's Pickle Tools: "Jet" gender is male
-    And Nelim's Pickle Tools: "Jet" xenotype is "ERN_Rhyaeth"
-    And Nelim's Pickle Tools: "Jet" body type is Male
-    And Nelim's Pickle Tools: "Jet" skin colour override is cleared
-    And Nelim's Pickle Tools: "Jet" has the gene "ERN_Rhyaeth<colour>Scales"
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: the colonist bar is hidden
+    And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the tooltips are hidden
+    And Nelim's Pickle Tools: the resource readout is hidden
+    And Nelim's Pickle Tools: the selection brackets are hidden
+    And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: a colonist "Rhy" of kind "Colonist" exists
+    And Nelim's Pickle Tools: "Rhy" gender is male
+    And Nelim's Pickle Tools: "Rhy" xenotype is "ERN_Rhyaeth"
+    And Nelim's Pickle Tools: "Rhy" body type is Male
+    And Nelim's Pickle Tools: "Rhy" skin colour override is cleared
+    And Nelim's Pickle Tools: "Rhy" has the gene "ERN_Rhyaeth<colour>Scales"
     And I wait 5 ticks
     And game speed is paused
-    Then Nelim's Pickle Tools: "Jet" holds the gene "ERN_Rhyaeth<colour>Scales"
-    And Nelim's Pickle Tools: the fur of "Jet" is drawn from "Pawn/ScalySkin/ScalySkin_Male"
-    And Nelim's Pickle Tools: "Jet" skin colour reads rgb (<r>, <g>, <b>)
-    When Nelim's Pickle Tools: the camera is centered on "Jet" at root size 3
+    Then Nelim's Pickle Tools: "Rhy" holds the gene "ERN_Rhyaeth<colour>Scales"
+    And Nelim's Pickle Tools: the fur of "Rhy" is drawn from "Pawn/ScalySkin/ScalySkin_Male"
+    And Nelim's Pickle Tools: "Rhy" skin colour reads rgb (<r>, <g>, <b>)
+    When Nelim's Pickle Tools: the camera is centered on "Rhy" at root size 3
     And I take a screenshot "rhyaeth-scales-<colour>"
     Then no errors were logged
 
