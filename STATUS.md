@@ -23,9 +23,10 @@ remaining:
   - "2026-11-02: separate task, gates nothing (Audit): Virginie wants a catalogue of all Rhy'aeth body parts (Erin.Rhyaeth: heads, horns, tails, ears, wings, body-part genes) as a priority. Owner NPT (catalogues + contact sheets); a page of this mod may live in Docs/ via NPT's pages.json manifest. NPT DONE 2026-11-02 (PickleTools 10775f5): table ColonistRace/docs/catalogues/rhyaeth.md (31 defs), sheet PickleTools/ColonistRace/docs/img/looks/2901 Parties du corps Rhyaeth - Rhyaeth - 1.jpg; limit: Rhy'aeth head not drawn in NPT shots (but drawn in my front shots), male head not photographed, asked Virginie. Also pending: Virginie to pick Celeste or Iori (NSB profiles, Docs/IORI-PROFIL.md) as the look of the captured colonist, sheets still under construction"
   - "2026-10-31: unverified: 8.i Player.log not read (run minified before reading, Player.log dropped); raw key and error check needs a read of a new run's log"
   - "2026-10-31: unverified: 8.h no Mod options entry and no MainButtons shortcut, files only; no Pickle step checks it"
-  - "2026-10-31: unverified: 8.m code review (code_review_sha) not done; 1.7 pass (tested_1_7) not started; French run not played (not_applicable, no text)"
-updated: 2026-10-31
-protocols_read_sha: d35ec703d1245e493fd38adc23b7520373d4836f
+  - "2026-11-04: 8.m code review done (Opus sub-agent, d0b6b78..HEAD, Mod/ only, XML, no C#): no loading error; six xpaths match Erin 1.6 and 1.7 FurDef, every ScalySkin_<Type> has south, north and east; About.xml description fixed (WIP line, Baby exception), commit 0f4fcf3. Observation only: a female Thin, Hulk or Fat Rhy'aeth gets the unisex ScalySkin_<Type>, WDI's _Female variants are not used (a FurDef path cannot express gender). Not done: 1.7 pass (tested_1_7) not started; French run not played (not_applicable, no text)"
+code_review_sha: 0f4fcf3a78b51a3db31717b723c3b51916c96111  # 2026-11-04, range d0b6b78..0f4fcf3, Mod/ only
+updated: 2026-11-04
+protocols_read_sha: f7f1b777c0ba8adde19aadf4fce311fea2f82f1b
 ---
 
 # Rhyaeth WDI Realistic Bodies Patch: status
