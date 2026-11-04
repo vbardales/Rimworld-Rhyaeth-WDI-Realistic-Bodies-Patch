@@ -7,9 +7,7 @@
     <li>1.6</li>
   </supportedVersions>
   <url>https://github.com/vbardales/Rimworld-Rhyaeth-WDI-Realistic-Bodies-Patch</url>
-  <description>A small compatibility patch: the Rhy'aeth xenotype of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3707527452]Erin's Rhy'aeth[/url] wears the scaly body textures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3527486510]WDI's Realistic Bodies[/url] (the ScalySkin set), body type by body type.
-
-WORK IN PROGRESS. This page describes the intended behaviour; the patch itself is not written yet.
+  <description>A small compatibility patch: the Rhy'aeth xenotype of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3707527452]Erin's Rhy'aeth[/url] wears the scaly body textures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3527486510]WDI's Realistic Bodies[/url] (the ScalySkin set), body type by body type: Female, Male, Thin, Hulk, Fat and Child. Babies keep Erin's own swaddled-baby texture, since WDI ships none.
 
 IF I GO QUIET
 
