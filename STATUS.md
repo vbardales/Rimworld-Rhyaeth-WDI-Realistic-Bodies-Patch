@@ -25,6 +25,7 @@ remaining:
   - "2026-11-04: 8.h feature 03-no-settings written (NPT step: the mod options page of the mod ... does not exist, no MainButtons step needed: no MainButtonDef), not played yet, ticket 8136 queued (filter 03-no-settings, map wsl-deps.rhyaeth.map, tree 8d0cf85)"
   - "2026-11-04: 8.m code review done (Opus sub-agent, d0b6b78..HEAD, Mod/ only, XML, no C#): no loading error; six xpaths match Erin 1.6 and 1.7 FurDef, every ScalySkin_<Type> has south, north and east; About.xml description fixed (WIP line, Baby exception), commit 0f4fcf3. Observation only: a female Thin, Hulk or Fat Rhy'aeth gets the unisex ScalySkin_<Type>, WDI's _Female variants are not used (a FurDef path cannot express gender). Not done: 1.7 pass (tested_1_7) not started; French run not played (not_applicable, no text)"
 code_review_sha: 0f4fcf3a78b51a3db31717b723c3b51916c96111  # 2026-11-04, range d0b6b78..0f4fcf3, Mod/ only
+  - "2026-11-04: spin-off, gates nothing: Virginie wants a layered appearance mod (genes per slot body, eyes, head, hair; chain individual gene, race default if its mod is loaded, global default, vanilla; defaults in Mod options). Audit created folder BiotechBodies (mod Biotech Bodies, nelim.biotechbodies), session local_a5971e97-401f-48ce-b4a8-eed198ecbb20 owns it with the POC (texture mods cohabitation, Tests/Poc/). This patch stays as is; Virginie: finish this mod first. Possible later: female Thin, Hulk, Fat Rhyaeth use unisex ScalySkin_<Type>"
 updated: 2026-11-04
 protocols_read_sha: f7f1b777c0ba8adde19aadf4fce311fea2f82f1b
 ---
