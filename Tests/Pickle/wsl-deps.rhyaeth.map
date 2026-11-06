@@ -18,3 +18,5 @@ nelim.pickletools.clickdiagnostics path:PickleTools/ClickDiagnostics/Mod
 LazyFridayStudio.GenesExpandedSkin 3214172563
 rooboid.hdhair.continued 3559870636
 VanillaExpanded.VHE 1888705256
+# Load audit: the log of the mod, read as a whole (feature 04).
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
