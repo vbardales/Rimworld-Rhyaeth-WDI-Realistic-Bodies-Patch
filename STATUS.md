@@ -87,3 +87,33 @@ Offline, on revision `14d0677` of this repository, Erin's Rhy'aeth 3707527452 an
 - No C#: no unit tests, not applicable. No local script in this repository, so nothing to declare in `scripts/LOCAL_SCRIPTS.md`.
 - Pickle suites written, not played: `Tests/Pickle/`, pass `wsl-deps.rhyaeth.map`, features `01-textures-resolve`, `02-rhyaeth-bodies` (bodies, child, scale colours; every capture `@review`). Behaviours B1 to B7 in `TESTING.md`.
 - Translations: `not_applicable`, see Translation audit.
+
+## NSB (2026-11-10, sync-nsb-npt)
+
+First sync, at the start of `shootGallery`: no shotlist exists yet, so nothing in the mod moved; this section records what NSB and NPT offer and what is still open. The Pickle suite plays on the fixture `test-colony`, not on the NSB save, with anonymous colonists ("Rhy") built by step.
+
+Places read: 2026-11-10 (SANCTUAIRE-LIEUX.md sections 4 and 11 only) Tribe read: 2026-11-10 (CELESTE-PROFIL, IORI-PROFIL, NSB-ROSTER lines for both, HUMAINS-PROFILS, GALERIE-COLONS, AVANCEMENT and VALIDE lines for both) Steps read: 2026-11-10 (git log of PickleTools steps and catalogues, steps.md for the Rhy'aeth steps, catalogues/rhyaeth.md head)
+
+Rules said back (owner, 2026-11-05 to 2026-11-07): everything in NSB is free (places, colonists, domestic animals); a colonist or domestic animal outside NSB needs the owner's express validation before the shotlist counts on it; a colonist's properties change only with her express validation; every outfit is free; every animal the mod includes must be in the gallery.
+
+| Place (validated by Virginie) | Shots that use it | Changes for the gallery | Last read |
+| --- | --- | --- | --- |
+| none chosen yet (candidates: cloister, terrace, hut, statue-garden, pediatrics for the child) | none | none | 2026-11-10 |
+
+| Colonist | Shots | Outfit per shot | Last read of profile | Exceptions |
+| --- | --- | --- | --- | --- |
+| Celeste, Rhy'aeth, Female_Hulk (`Colonist` kind) | none yet; Hulk female turntable played in the test suite | to choose at the shotlist (wardrobe in CELESTE-PROFIL.md) | 2026-11-10 | none. NSB itself is validated only for Male bodies (owner, 2026-11-06): her photos are pending on its side |
+| Iori, Rhy'aeth, Male_Fat (`Colonist` kind) | none yet; Male body played in the test suite | to choose at the shotlist (wardrobe in IORI-PROFIL.md) | 2026-11-10 | none. NSB lists his Rhy'aeth properties as "à définir par la propriétaire" (AVANCEMENT.md) |
+| F... (Rhy'aeth child, name to come, announced 2026-11-06) | none yet | none | not read (no profile yet) | none; shows the Child body, the patch covers it. Baby Fulgrim wears Erin's own texture, outside the patch |
+
+| Animal | Shots | Outfit | Last read of its sheet | Exceptions |
+| --- | --- | --- | --- | --- |
+| none: the mod adds no animal and its items address none | none | none | not applicable | none |
+
+| Animal the mod includes (rule 5) | Shots | Status |
+| --- | --- | --- |
+| none: the patch only redraws the Rhy'aeth body of Erin's xenotype | none | nothing missing |
+
+NPT since this mod's last read: no step or catalogue change touches Rhy'aeth looks; `catalogues/rhyaeth.md` (31 defs, 2026-11-02) is the reference for the parts. Steps this mod already uses: `loses the gene`, `is undressed`, `takes off the garments covering`, `faces`.
+
+Open: Celeste (Female_Hulk) is not validated by NSB yet and Iori's Rhy'aeth properties are open on its side, so a gallery shot of either needs the owner's word on the look (quote and date in the shotlist) or an NSB-validated alternative.
