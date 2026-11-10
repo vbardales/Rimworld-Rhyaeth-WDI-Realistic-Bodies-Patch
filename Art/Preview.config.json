@@ -1,0 +1,18 @@
+{
+  "panel": {
+    "title": "Rhy'aeth WDI Realistic Bodies Patch",
+    "titleParts": [
+      { "text": "Rhy'aeth WDI Realistic Bodies Patch" }
+    ],
+    "description": "A patch for Rhy'aeth's WDI Realistic Bodies mod, making it compatible with other mods."
+  },
+  "background": { "file": "Preview-source.png" },
+  "icon": { "file": "ModIcon-badge.png" },
+  "palette": {
+    "veil": "#30271F",
+    "inkPrimary": "#F4EEE4",
+    "inkSecondary": "#D8A55E",
+    "accent": "#E8972F",
+    "badgeInk": "#17110D"
+  }
+}
