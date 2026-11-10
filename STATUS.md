@@ -118,3 +118,18 @@ Rules said back (owner, 2026-11-05 to 2026-11-07): everything in NSB is free (pl
 NPT since this mod's last read: no step or catalogue change touches Rhy'aeth looks; `catalogues/rhyaeth.md` (31 defs, 2026-11-02) is the reference for the parts. Steps this mod already uses: `loses the gene`, `is undressed`, `takes off the garments covering`, `faces`.
 
 Open: Celeste (Female_Hulk) is not validated by NSB yet and Iori's Rhy'aeth properties are open on its side, so a gallery shot of either needs the owner's word on the look (quote and date in the shotlist) or an NSB-validated alternative.
+
+## Shotlist (2026-11-10, write-shotlist, plan rated by score-gallery: no capture yet)
+
+Header of `Tests/Pickle/Mod/Pickle/Features/05-gallery.feature` holds the full lines. Story: one clear day at the Sanctuary, Nelim welcomes six anonymous Rhy'aeth guests (one per body type); Opus director pass kept (N/E/S/W facings, jobs instead of missing steps, Nelim in every shot, Cat and Duck from the front, light clothes so the bodies show, zooms lowered for 268 px).
+
+| shot | a time | b decor | c living | d pawns | e action | f composition | g subject | j mod | plan |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 arrival | cloister 07:30 clear | 2 TorchLamp lit, Campfire, 3 Plant_Daylily, Pemmican stack | plants | Aren bronze Undercut, Sael green DragonHD, Nelim LongHD, smiles | Aren forced walk, Nelim faces E | zoom 3.5, torii left, guests right | Nelim welcomes guests | 2 guests at zoom 3.5 | 5 |
+| 2 tea | hut 10:00 clear | tatamis, table, andon, 2 PlantPot Plant_Rose, Shelf, TorchLamp | Cat from the front | Brum black ShavedMohawk tank top peach | sits, carries PsychiteTea, 2 arrivals walk in | zoom 4, Brum left | Fat body at tea | Brum at zoom 4 | 5 |
+| 3 flowers | flower-garden 12:30 | Plant_Rose and Daylily x12, Stool, 2 PlantPot, TorchLamp | plants | Korr white BattleBraid, Pip bronze Undercut | Pip offers RawBerries, Nelim walks carrying RawBerries | zoom 4.5, Korr left, Pip front right | Hulk and Child together | 2 bodies at zoom 4.5 | 5 |
+| 4 bridge | river-bridge 15:00 | TorchLamp on post, reeds (verify), crate with WoodLog (verify) | Duck x2 from the front | Ysha blue LongHD, Aren | Aren forced walk, Ysha stops | zoom 5, diagonal bridge | Thin body on the bridge | Ysha blue on brown planks | 5 |
+| 5 portrait | statue-garden 17:30 | Campfire and TorchLamp lit, 2 PlantPot, Stool | none | Sael, Nelim | Sael forced walk toward the statue | zoom 3.5 tight, statue right | green scales on stone | Sael fills the frame | 5 |
+| 6 dusk | terrace 20:00 dusk | table with MealFine and Beer, Campfire, 2 TorchLamp, 2 PlantPot | Cat asleep | 7 pawns, same outfits | sit, carries, toast | zoom 5, table across the middle | the family at the meal | weak assumed: 7 pawns small at 268 px | 4.5 |
+
+Series k: ok (one story, wide 1 and 6, medium 2 3 4, tight 5, opening torii, closing terrace). Mean plan 4.92. Not verified: Pemmican, WoodLog and reeds defNames, hairstyle defNames, VAE and LTS apparel, a step that sets scale genes in one go (gene steps exist). Not done: scenarios, `Check-ShotlistVsScenario`, `Check-Steps` on the new feature (no scenario yet), no ticket; `rate-gallery` next.
