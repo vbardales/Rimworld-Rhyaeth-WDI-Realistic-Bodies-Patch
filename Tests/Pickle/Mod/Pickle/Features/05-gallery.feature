@@ -460,7 +460,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Pip" wears "Apparel_KidShirt" dyed rgb (168, 213, 186)
     And Nelim's Pickle Tools: "Pip" wears "Apparel_KidPants" dyed rgb (90, 58, 32)
     And Nelim's Pickle Tools: I place the decor "Table2x2c" at (196, 121)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (194, 121)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (194, 123)
     And Nelim's Pickle Tools: I place the decor "Stool" at (194, 122)
     And Nelim's Pickle Tools: I place the decor "Stool" at (198, 121)
     And Nelim's Pickle Tools: I place the decor "Stool" at (198, 122)
@@ -476,7 +476,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: 2 of the item "Beer" are spawned at (197, 122)
     And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mimi" is spawned at (196, 123)
     And Nelim's Pickle Tools: the animal "Mimi" stands at (196, 123) facing South
-    And Nelim's Pickle Tools: "Brum" sits on the building "Stool" at (194, 121)
+    And Nelim's Pickle Tools: "Brum" sits on the building "Stool" at (194, 123)
     And Nelim's Pickle Tools: "Korr" sits on the building "Stool" at (194, 122)
     And Nelim's Pickle Tools: "Aren" sits on the building "Stool" at (198, 121)
     And Nelim's Pickle Tools: "Sael" sits on the building "Stool" at (198, 122)
