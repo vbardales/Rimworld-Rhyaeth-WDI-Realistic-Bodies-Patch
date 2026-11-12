@@ -4,7 +4,7 @@
 # STORY. One day at the Sanctuary of Nelim (mod SanctuaryBacklot, save "Nelims-tribe"). Nelim, the protagonist and in every
 # image, welcomes a family of six Rhy'aeth who walked in from the north road at dawn (Erin's Rhy'aeth, bodies redrawn by
 # this patch with the scaly textures of WDI's Realistic Bodies). The series follows the family through the Sanctuary:
-# arrival at the torii, tea, flowers, the bridge, a quiet portrait, the evening on the terrace. Each image puts one body
+# arrival at the torii, tea, flowers, the bridge, a quiet portrait, the evening in the emerald clearing. Each image puts one body
 # type in front (the others are company). Opening image: shot 1 (the torii, the first two guests). Closing image: shot 6
 # (the whole family, the evening).
 # Rhythm: each image sets its own hour of the same clear day (07:30, 10:00, 12:30, 15:00, 17:30, 20:00), "I set the
@@ -80,14 +80,14 @@
 #         Decor: a lit Campfire and a lit TorchLamp as light sources, PlantPot x2, a Stool (verify defNames); removed after.
 #         Moment: just before, Nelim told the statue's story; just after, Sael walks on. Obtained: "faces", Goto job.
 #
-#   6. workshop-6-dusk | terrace, centre (196, 123), table cell (196, 121), zoom 5 wide | 20:00, dusk, settle 60 ticks
+#   6. workshop-6-dusk | emerald-clearing, centre (197, 152), table cell (197, 150), zoom 5 wide | 20:00, dusk, settle 60 ticks
 #         Subject/says: the whole family gathers for the evening meal: six body types, five scale colours, one family.
 #         Composition: wide, the table across the middle; Brum and Korr seated left, Ysha standing right, Aren and Sael on the
 #           far side, Pip on the floor at the front, Nelim at the end pouring; lamps lit left and right; guests sit or stand
 #           facing S so the front of each body shows; zoom pulled in until the bodies read at 268 px.
 #         Living: seven pawns, all smiling; Cat asleep under the table (animal from the side). Same outfits as the day.
-#         Decor: the terrace's own cases; table with MealFine and Beer (verify), a Campfire and two lit TorchLamp (no mains
-#           power on the terrace), PlantPot x2; all removed after.
+#         Decor: no props of the map (free clearing); table with MealFine and Beer (verify), a Campfire and two lit TorchLamp (no mains
+#           power in the clearing), PlantPot x2; all removed after.
 #         Criterion j assumed weak (-0.5): seven pawns at zoom 5 are small at 268 px; the closing group is kept for the story.
 #         Moment: just before, the meal was served; just after, the toast. Obtained: "sits on the building", "faces", "carries
 #           the item", lamps "is lit".
@@ -383,7 +383,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: the decor is removed
     Then no errors were logged
 
-  Scenario: 6 - workshop-6-dusk (terrace, 20:00)
+  Scenario: 6 - workshop-6-dusk (emerald-clearing, 20:00)
     Given the save "Nelims-tribe-decor-mods" is loaded
     And game speed is paused
     And I close all dialogs
@@ -459,33 +459,33 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Korr" wears "Apparel_Pants" dyed rgb (90, 58, 32)
     And Nelim's Pickle Tools: "Pip" wears "Apparel_KidShirt" dyed rgb (168, 213, 186)
     And Nelim's Pickle Tools: "Pip" wears "Apparel_KidPants" dyed rgb (90, 58, 32)
-    And Nelim's Pickle Tools: I place the decor "Table2x2c" at (196, 121)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (194, 123)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (194, 122)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (198, 121)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (198, 122)
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (193, 119)
-    And Nelim's Pickle Tools: the decor "Campfire" at (193, 119) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (193, 123)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (193, 123) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (200, 123)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (200, 123) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (200, 119)
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (193, 124)
-    And Nelim's Pickle Tools: 2 of the item "MealFine" are spawned at (196, 121)
-    And Nelim's Pickle Tools: 2 of the item "Beer" are spawned at (197, 122)
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mimi" is spawned at (196, 123)
-    And Nelim's Pickle Tools: the animal "Mimi" stands at (196, 123) facing South
-    And Nelim's Pickle Tools: "Brum" sits on the building "Stool" at (194, 123)
-    And Nelim's Pickle Tools: "Korr" sits on the building "Stool" at (194, 122)
-    And Nelim's Pickle Tools: "Aren" sits on the building "Stool" at (198, 121)
-    And Nelim's Pickle Tools: "Sael" sits on the building "Stool" at (198, 122)
-    And Nelim's Pickle Tools: "Pip" stands at (196, 124) facing South
-    And Nelim's Pickle Tools: "Ysha" stands at (200, 121) facing South
+    And Nelim's Pickle Tools: I place the decor "Table2x2c" at (197, 150)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (195, 152)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (195, 151)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 150)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 151)
+    And Nelim's Pickle Tools: I place the decor "Campfire" at (194, 148)
+    And Nelim's Pickle Tools: the decor "Campfire" at (194, 148) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (194, 152)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (194, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (201, 152)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (201, 152) is lit
+    And Nelim's Pickle Tools: I place the decor "PlantPot" at (201, 148)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" at (194, 153)
+    And Nelim's Pickle Tools: 2 of the item "MealFine" are spawned at (197, 150)
+    And Nelim's Pickle Tools: 2 of the item "Beer" are spawned at (198, 151)
+    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mimi" is spawned at (197, 152)
+    And Nelim's Pickle Tools: the animal "Mimi" stands at (197, 152) facing South
+    And Nelim's Pickle Tools: "Brum" sits on the building "Stool" at (195, 152)
+    And Nelim's Pickle Tools: "Korr" sits on the building "Stool" at (195, 151)
+    And Nelim's Pickle Tools: "Aren" sits on the building "Stool" at (199, 150)
+    And Nelim's Pickle Tools: "Sael" sits on the building "Stool" at (199, 151)
+    And Nelim's Pickle Tools: "Pip" stands at (197, 153) facing South
+    And Nelim's Pickle Tools: "Ysha" stands at (201, 150) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
-    And Nelim's Pickle Tools: "Nelim" stands at (195, 120) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (196, 149) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "Beer"
-    And Nelim's Pickle Tools: I frame the cell (196, 123) at zoom 5
+    And Nelim's Pickle Tools: I frame the cell (197, 152) at zoom 5
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And I take a screenshot "workshop-6-dusk"
