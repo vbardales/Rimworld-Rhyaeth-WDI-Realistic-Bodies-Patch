@@ -12,7 +12,7 @@
 # keeps the same outfit all day. The guests are dressed light (tank tops, shorts, tribal wear) so the scaly bodies show.
 # Guests are anonymous Rhy'aeth colonists created by the scenario ("a colonist 'X' of kind 'Colonist' exists" + NPT
 # ColonistRace body, gender and gene steps): no NSB colonist, no NSB property changed, no owner validation needed.
-# Included animals (rule 5 of sync-nsb-npt): none, the mod adds no animal. Cat and Duck below are decor animals of the
+# Included animals (rule 5 of sync-nsb-npt): none, the mod adds no animal. The NSB cats Tama (akaNEKO_N_Forest_Cat) and Kuru (akaNEKO_kuroneko) below are NSB animals (owner, 2026-11-12: no Cat Mimi, no Duck), not animals of the
 # save (anonymous fauna), shown from the front once (criterion c). Baby Rhy'aeth is out of the patch (Erin's own texture).
 # Facings are N, E, S or W only (the game has no diagonal). Poses come from a job paused on the capture tick, never from
 # a posed idle; steps that do not exist ("pours", "kneels", "leans on a rail") are replaced by "sits on the building",
@@ -45,9 +45,9 @@
 #   2. workshop-2-tea | hut / tea-room, centre (140, 73), zoom 4 medium | 10:00, clear, settle 60 ticks
 #         Subject/says: Brum (Fat, black scales) sits at the low table with a cup; the Fat body reads round and soft in black scales.
 #         Composition: medium, table in the lower third, Brum decentred left facing S, Nelim right facing W toward him, cushions
-#           and andon lamp behind, tatami foreground. Cat sits front left, faces S.
+#           and andon lamp behind, tatami foreground. Tama sits front left, faces S.
 #         Living: Brum (smile), Nelim (smile) holding PsychiteTea, Ysha (Thin, blue) and Korr (Hulk, white) arriving at the door
-#           in the back (Goto jobs), Cat (animal, from the front). Brum bare-armed (tank top) so the body shows.
+#           in the back (Goto jobs), Tama (NSB cat, from the front). Brum bare-armed (tank top) so the body shows.
 #         Decor: the hut's tatamis, low table, cushions, oil andon; PlantPot x2 with Plant_Rose by the door (verify), a Shelf with
 #           a plant, a lit TorchLamp at the door. All removed after.
 #         Moment: just before, Nelim set the cups; just after, Brum drinks. Obtained: "sits on the building" cushion cell,
@@ -66,10 +66,10 @@
 #         Subject/says: Ysha (Thin, blue) pauses on the bridge; the Thin body reads slim against the planks.
 #         Composition: bridge diagonal, Ysha foreground left facing E, Aren mid-ground crossing W on a Goto job, Nelim on the
 #           bank waving (faces S), water bottom, warm afternoon light. Blue scales against brown planks (not the water).
-#         Living: Ysha, Aren (Male, bronze), Nelim (smile), Duck x2 on the water (the Duck faces S once, criterion c).
+#         Living: Ysha, Aren (Male, bronze), Nelim (smile), Kuru (NSB black cat) on the planks (faces S, criterion c).
 #         Decor: a lantern on the bridge post (lit TorchLamp), reeds on the bank (verify), a crate with WoodLog (verify).
 #         Moment: just before, Ysha stopped to watch the water; just after, Aren calls her over.
-#         Obtained: "stands at", "faces", Goto job for Aren, Duck "faces" step.
+#         Obtained: "stands at", "faces", Goto job for Aren, animal "faces" step for Kuru.
 #
 #   5. workshop-5-portrait | statue-garden, centre (155, 99), zoom 2.5 tight | 17:30, clear, settle 60 ticks
 #         Subject/says: Sael (Female, green) looks up at a statue while Nelim points it out; green scales against warm stone.
@@ -85,7 +85,7 @@
 #         Composition: wide, the table across the middle; Brum and Korr seated left, Ysha standing right, Aren and Sael on the
 #           far side, Pip on the floor at the front, Nelim at the end pouring; lamps lit left and right; guests sit or stand
 #           facing S so the front of each body shows; zoom pulled in until the bodies read at 268 px.
-#         Living: seven pawns, all smiling; Cat asleep under the table (animal from the side). Same outfits as the day.
+#         Living: seven pawns, all smiling; Kuru (NSB black cat) at the table end, from the front. Same outfits as the day.
 #         Decor: no props of the map (free clearing); table with MealFine and Beer (verify), a Campfire and two lit TorchLamp (no mains
 #           power in the clearing), PlantPot x2; all removed after.
 #         Criterion j: first capture (zoom 5) read too small at 268 px, zoom 3.5 and 21:00 for a darker dusk; stools spread so wings do not overlap.
@@ -203,8 +203,8 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (142, 75) fully grown
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (143, 75)
     And Nelim's Pickle Tools: I place the decor "Shelf" at (137, 72)
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mimi" is spawned at (139, 71)
-    And Nelim's Pickle Tools: the animal "Mimi" stands at (139, 71) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_N_Forest_Cat" named "Tama" is spawned at (139, 71)
+    And Nelim's Pickle Tools: the animal "Tama" stands at (139, 71) facing South
     And Nelim's Pickle Tools: "Brum" sits on the building "Stool" at (140, 73)
     And Nelim's Pickle Tools: "Brum" carries the item "PsychiteTea"
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
@@ -326,8 +326,8 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (137, 125)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (137, 125) is lit
     And Nelim's Pickle Tools: I place the decor "WoodLog" at (133, 123)
-    And Nelim's Pickle Tools: an adult animal of kind "Duck" named "Coin" is spawned at (133, 124)
-    And Nelim's Pickle Tools: the animal "Coin" stands at (133, 124) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_kuroneko" named "Kuru" is spawned at (133, 124)
+    And Nelim's Pickle Tools: the animal "Kuru" stands at (133, 124) facing South
     And Nelim's Pickle Tools: "Ysha" stands at (134, 124) facing East
     And Nelim's Pickle Tools: "Aren" stands at (137, 124) facing West
     And Nelim's Pickle Tools: "Aren" is forced to walk to (135, 124)
@@ -474,8 +474,8 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (194, 153)
     And Nelim's Pickle Tools: 2 of the item "MealFine" are spawned at (197, 150)
     And Nelim's Pickle Tools: 2 of the item "Beer" are spawned at (198, 151)
-    And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mimi" is spawned at (197, 152)
-    And Nelim's Pickle Tools: the animal "Mimi" stands at (197, 152) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "akaNEKO_kuroneko" named "Kuru" is spawned at (197, 152)
+    And Nelim's Pickle Tools: the animal "Kuru" stands at (197, 152) facing South
     And Nelim's Pickle Tools: "Brum" sits on the building "Stool" at (195, 152)
     And Nelim's Pickle Tools: "Korr" sits on the building "Stool" at (195, 149)
     And Nelim's Pickle Tools: "Aren" sits on the building "Stool" at (199, 150)
