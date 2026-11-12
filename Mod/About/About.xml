@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Rhyaeth WDI Realistic Bodies Patch</name>
   <author>Nelim</author>
@@ -39,4 +39,4 @@ Erin and Haru'a for Rhy'aeth. Windonsi and Starkz for WDI's Realistic Bodies, wh
     <li>Erin.Rhyaeth</li>
     <li>WDI.Realistic.Bodies</li>
   </loadAfter>
-</ModMetaData>
+<modVersion>0.1.0</modVersion></ModMetaData>

@@ -7,7 +7,7 @@
     "description": "A patch for Rhy'aeth's WDI Realistic Bodies mod, making it compatible with other mods."
   },
   "background": { "file": "Preview-source.png" },
-  "icon": { "file": "ModIcon-badge.png" },
+  "icon": { "file": "ModIcon-source.png" },
   "palette": {
     "veil": "#30271F",
     "inkPrimary": "#F4EEE4",
