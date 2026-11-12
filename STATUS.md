@@ -30,7 +30,7 @@ remaining:
 code_review_sha: 0f4fcf3a78b51a3db31717b723c3b51916c96111  # 2026-11-04, range d0b6b78..0f4fcf3, Mod/ only
   - "2026-11-04: spin-off, gates nothing: Virginie wants a layered appearance mod (genes per slot body, eyes, head, hair; chain individual gene, race default if its mod is loaded, global default, vanilla; defaults in Mod options). Audit created folder BiotechBodies (mod Biotech Bodies, nelim.biotechbodies), session local_a5971e97-401f-48ce-b4a8-eed198ecbb20 owns it with the POC (texture mods cohabitation, Tests/Poc/). This patch stays as is; Virginie: finish this mod first. Possible later: female Thin, Hulk, Fat Rhyaeth use unisex ScalySkin_<Type>"
 updated: 2026-11-12
-protocols_read_sha: ad2c671a7ae51b8cba54e969454020e064116eb1
+protocols_read_sha: ba6b78893666b82100fbbc3d3769fbd913f735bf
 ---
 
 # Rhyaeth WDI Realistic Bodies Patch: status
