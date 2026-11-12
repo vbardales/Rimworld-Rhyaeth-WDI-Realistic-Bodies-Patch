@@ -120,6 +120,8 @@ NPT since this mod's last read (re-synced 2026-11-12): no step or catalogue chan
 
 Open: Celeste (Female_Hulk) is not validated by NSB yet and Iori's Rhy'aeth properties are open on its side, so a gallery shot of either needs the owner's word on the look (quote and date in the shotlist) or an NSB-validated alternative.
 
+Translation review 2026-11-12: ChatGPT review read (two runs, no correction; only refusal is PUBLICATION.md, in Docs/review-refusals.md). Validated by Virginie 2026-11-12 ("je valide la relecture"). `translation_fr` stays `not_applicable`.
+
 ## Shotlist (2026-11-10, write-shotlist, plan rated by score-gallery: no capture yet)
 
 Header of `Tests/Pickle/Mod/Pickle/Features/05-gallery.feature` holds the full lines. Story: one clear day at the Sanctuary, Nelim welcomes six anonymous Rhy'aeth guests (one per body type); Opus director pass kept (N/E/S/W facings, jobs instead of missing steps, Nelim in every shot, Cat and Duck from the front, light clothes so the bodies show, zooms lowered for 268 px).
