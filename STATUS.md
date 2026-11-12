@@ -119,7 +119,7 @@ NPT since this mod's last read (re-synced 2026-11-12): no step or catalogue chan
 
 Open: Celeste (Female_Hulk) is not validated by NSB yet and Iori's Rhy'aeth properties are open on its side, so a gallery shot of either needs the owner's word on the look (quote and date in the shotlist) or an NSB-validated alternative.
 
-Translation review 2026-11-12: ChatGPT review read (two runs, no correction; only refusal is PUBLICATION.md, in Docs/review-refusals.md). Validated by Virginie 2026-11-12 ("je valide la relecture"). `translation_fr` stays `not_applicable`.
+Translation review 2026-11-12: ChatGPT review read (two runs, no correction; only refusal is PUBLICATION.md, in Docs/review-refusals.md). Validated by Virginie 2026-11-12 ("je valide la relecture"). `translation_fr` stays `not_applicable`. Third run (page 1 of 1): no correction, confirmed by Virginie.
 
 ## Shotlist (2026-11-10, write-shotlist, plan rated by score-gallery: no capture yet)
 
