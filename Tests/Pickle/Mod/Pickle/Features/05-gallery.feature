@@ -130,10 +130,10 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Aren" wears "Apparel_Pants" dyed rgb (90, 58, 32)
     And Nelim's Pickle Tools: "Sael" wears "Apparel_BasicShirt" dyed rgb (200, 150, 62)
     And Nelim's Pickle Tools: "Sael" wears "Apparel_Pants" dyed rgb (90, 58, 32)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (172, 129)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (172, 129) is lit
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (184, 129)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (184, 129) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (172, 128)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (172, 128) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (184, 128)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (184, 128) is lit
     And Nelim's Pickle Tools: I place the decor "Campfire" at (175, 127)
     And Nelim's Pickle Tools: the decor "Campfire" at (175, 127) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (173, 130) fully grown
@@ -246,6 +246,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: a colonist "Pip" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Pip" gender is male
     And Nelim's Pickle Tools: "Pip" xenotype is "ERN_Rhyaeth"
+    And "Pip" is 8 years old
     And Nelim's Pickle Tools: "Pip" body type is Child
     And Nelim's Pickle Tools: "Pip" has the gene "ERN_RhyaethBronzeScales"
     And Nelim's Pickle Tools: "Pip" has the gene "Hair_LightPurple"
@@ -325,8 +326,8 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (137, 125)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (137, 125) is lit
     And Nelim's Pickle Tools: I place the decor "WoodLog" at (133, 123)
-    And Nelim's Pickle Tools: an adult animal of kind "Duck" named "Coin" is spawned at (136, 121)
-    And Nelim's Pickle Tools: the animal "Coin" stands at (136, 121) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "Duck" named "Coin" is spawned at (133, 124)
+    And Nelim's Pickle Tools: the animal "Coin" stands at (133, 124) facing South
     And Nelim's Pickle Tools: "Ysha" stands at (134, 124) facing East
     And Nelim's Pickle Tools: "Aren" stands at (137, 124) facing West
     And Nelim's Pickle Tools: "Aren" is forced to walk to (135, 124)
@@ -372,7 +373,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: I place the decor "PlantPot" at (153, 101)
     And Nelim's Pickle Tools: I place the decor "Stool" at (156, 101)
     And Nelim's Pickle Tools: "Sael" stands at (154, 99) facing East
-    And Nelim's Pickle Tools: "Sael" is forced to walk to (155, 99)
+    And Nelim's Pickle Tools: "Sael" is forced to walk to (154, 100)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" stands at (152, 100) facing East
     And Nelim's Pickle Tools: I frame the cell (155, 99) at zoom 3.5
@@ -439,6 +440,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: a colonist "Pip" of kind "Colonist" exists
     And Nelim's Pickle Tools: "Pip" gender is male
     And Nelim's Pickle Tools: "Pip" xenotype is "ERN_Rhyaeth"
+    And "Pip" is 8 years old
     And Nelim's Pickle Tools: "Pip" body type is Child
     And Nelim's Pickle Tools: "Pip" has the gene "ERN_RhyaethBronzeScales"
     And Nelim's Pickle Tools: "Pip" has the gene "Hair_LightPurple"
