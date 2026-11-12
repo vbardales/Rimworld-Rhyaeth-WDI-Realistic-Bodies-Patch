@@ -92,7 +92,7 @@
 #         Moment: just before, the meal was served; just after, the toast. Obtained: "sits on the building", "faces", "carries
 #           the item", lamps "is lit".
 #
-@review @en-only @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.stagedecor @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.camerazoom
+@review @en-only @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.stagedecor @requires:nelim.pickletools @requires:nelim.pickletools.camerazoom
 Feature: Workshop gallery, one day at the Sanctuary
 
   Scenario: 1 - workshop-1-arrival (cloister, 07:30)
