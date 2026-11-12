@@ -99,7 +99,7 @@ Rules said back (owner, 2026-11-05 to 2026-11-07): everything in NSB is free (pl
 
 | Place (validated by Virginie) | Shots that use it | Changes for the gallery | Last read |
 | --- | --- | --- | --- |
-| none chosen yet (candidates: cloister, terrace, hut, statue-garden, pediatrics for the child) | none | none | 2026-11-10 |
+| cloister (shot 1), hut (2), flower-garden (3), river-bridge (4), statue-garden (5), emerald-clearing (6, replaces the terrace 2026-11-12: its cells hold map props; "zone libre" in SANCTUAIRE-LIEUX.md) | shots 1 to 6 | decor placed by the scenarios and removed after; no change to the place | 2026-11-10 (emerald-clearing row seen in the 2026-11-10 read, not reopened) |
 
 | Colonist | Shots | Outfit per shot | Last read of profile | Exceptions |
 | --- | --- | --- | --- | --- |
@@ -116,6 +116,8 @@ Rules said back (owner, 2026-11-05 to 2026-11-07): everything in NSB is free (pl
 | none: the patch only redraws the Rhy'aeth body of Erin's xenotype | none | nothing missing |
 
 NPT since this mod's last read (re-synced 2026-11-12): no step or catalogue change touches Rhy'aeth looks; one new step may serve the gallery frame: `Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden` (not used yet); `catalogues/rhyaeth.md` (31 defs, 2026-11-02) is the reference for the parts. Steps this mod already uses: `loses the gene`, `is undressed`, `takes off the garments covering`, `faces`.
+
+Sync check 2026-11-12 (git log only, no doc reopened): NSB changed once since the last read, commit 18abf53, a rename of docs/ to Docs/ with 0 content change; NPT steps and catalogues unchanged since 2026-11-12. The gallery uses no NSB colonist (six anonymous guests plus Nelim, outfits in the shotlist) and no domestic animal outside NSB; Cat and Duck are the validated NSB-side decor animals of the shotlist. Included animals: none, nothing missing. Tribe read date left at 2026-11-10 on purpose: no tribe file was reopened.
 
 Open: Celeste (Female_Hulk) is not validated by NSB yet and Iori's Rhy'aeth properties are open on its side, so a gallery shot of either needs the owner's word on the look (quote and date in the shotlist) or an NSB-validated alternative.
 
