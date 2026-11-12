@@ -255,8 +255,8 @@ Feature: Workshop gallery, one day at the Sanctuary
     And I wait 60 ticks
     And Nelim's Pickle Tools: "Korr" wears "Apparel_BasicShirt" dyed rgb (160, 82, 45)
     And Nelim's Pickle Tools: "Korr" wears "Apparel_Pants" dyed rgb (90, 58, 32)
-    And Nelim's Pickle Tools: "Pip" wears "Apparel_BasicShirt" dyed rgb (168, 213, 186)
-    And Nelim's Pickle Tools: "Pip" wears "Apparel_Pants" dyed rgb (90, 58, 32)
+    And Nelim's Pickle Tools: "Pip" wears "Apparel_KidShirt" dyed rgb (168, 213, 186)
+    And Nelim's Pickle Tools: "Pip" wears "Apparel_KidPants" dyed rgb (90, 58, 32)
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (150, 111) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (150, 109) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Rose" at (151, 111) fully grown
@@ -457,8 +457,8 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Ysha" wears "Apparel_Pants" dyed rgb (90, 58, 32)
     And Nelim's Pickle Tools: "Korr" wears "Apparel_BasicShirt" dyed rgb (160, 82, 45)
     And Nelim's Pickle Tools: "Korr" wears "Apparel_Pants" dyed rgb (90, 58, 32)
-    And Nelim's Pickle Tools: "Pip" wears "Apparel_BasicShirt" dyed rgb (168, 213, 186)
-    And Nelim's Pickle Tools: "Pip" wears "Apparel_Pants" dyed rgb (90, 58, 32)
+    And Nelim's Pickle Tools: "Pip" wears "Apparel_KidShirt" dyed rgb (168, 213, 186)
+    And Nelim's Pickle Tools: "Pip" wears "Apparel_KidPants" dyed rgb (90, 58, 32)
     And Nelim's Pickle Tools: I place the decor "Table2x2c" at (196, 121)
     And Nelim's Pickle Tools: I place the decor "Stool" at (194, 121)
     And Nelim's Pickle Tools: I place the decor "Stool" at (194, 122)
