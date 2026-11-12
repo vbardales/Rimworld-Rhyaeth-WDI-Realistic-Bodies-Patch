@@ -32,7 +32,7 @@
 #
 # SHOTS (all story scenes; subtitle lines go to PUBLICATION.md "Gallery subtitles" at the end)
 #
-#   1. workshop-1-arrival | cloister, centre (178, 128), zoom 3.5 wide, tight enough for 268 px | 07:30, clear, settle 60 ticks
+#   1. workshop-1-arrival | cloister, centre (178, 128), zoom 2.5 tight, guests above 45 px at 268 px | 07:30, clear, settle 60 ticks
 #         Subject/says: Nelim welcomes Aren and Sael at the torii; the Rhy'aeth arrive in their new scaly bodies.
 #         Composition: wide but pulled in so both guests read at 268 px; torii and wall lanterns foreground left, guests
 #           decentred right, Nelim left, long cold shadows. Guests face S toward the camera, Nelim faces E toward them.
@@ -53,7 +53,7 @@
 #         Moment: just before, Nelim set the cups; just after, Brum drinks. Obtained: "sits on the building" cushion cell,
 #           "carries the item" PsychiteTea for Brum and for Nelim (the in-game tea), "faces", Goto jobs for the two arrivals.
 #
-#   3. workshop-3-flowers | flower-garden, centre (154, 110), zoom 4.5 medium | 12:30, clear, settle 60 ticks
+#   3. workshop-3-flowers | flower-garden, centre (154, 110), zoom 3 medium-tight | 12:30, clear, settle 60 ticks
 #         Subject/says: Korr (Hulk, white) and Pip (Child, bronze) at the rose bed: the biggest and the smallest body together.
 #         Composition: Korr centred-left in the middle ground facing E, Pip right foreground a cell nearer facing W toward
 #           her, roses and daylilies filling the foreground, statue garden in the background; noon light, short shadows.
@@ -62,7 +62,7 @@
 #         Moment: just before, Pip found a rose; just after, Korr bends to it. Obtained: "stands at", "faces", "carries the
 #           item", Goto job, plants "fully grown".
 #
-#   4. workshop-4-bridge | river-bridge, centre (135, 124), zoom 5 medium-wide | 15:00, clear, settle 60 ticks
+#   4. workshop-4-bridge | river-bridge, centre (135, 124), zoom 3.5 medium | 15:00, clear, settle 60 ticks
 #         Subject/says: Ysha (Thin, blue) pauses on the bridge; the Thin body reads slim against the planks.
 #         Composition: bridge diagonal, Ysha foreground left facing E, Aren mid-ground crossing W on a Goto job, Nelim on the
 #           bank waving (faces S), water bottom, warm afternoon light. Blue scales against brown planks (not the water).
@@ -71,7 +71,7 @@
 #         Moment: just before, Ysha stopped to watch the water; just after, Aren calls her over.
 #         Obtained: "stands at", "faces", Goto job for Aren, Duck "faces" step.
 #
-#   5. workshop-5-portrait | statue-garden, centre (155, 99), zoom 3.5 tight | 17:30, clear, settle 60 ticks
+#   5. workshop-5-portrait | statue-garden, centre (155, 99), zoom 2.5 tight | 17:30, clear, settle 60 ticks
 #         Subject/says: Sael (Female, green) looks up at a statue while Nelim points it out; green scales against warm stone.
 #         Composition: Sael decentred left facing E, a statue right, Nelim half in frame at the left edge facing E, low warm
 #           sun, long shadows, stone floor with a path of flagstones. Subject reads at 268 px: the green is the only strong
@@ -80,7 +80,7 @@
 #         Decor: a lit Campfire and a lit TorchLamp as light sources, PlantPot x2, a Stool (verify defNames); removed after.
 #         Moment: just before, Nelim told the statue's story; just after, Sael walks on. Obtained: "faces", Goto job.
 #
-#   6. workshop-6-dusk | emerald-clearing, centre (197, 152), table cell (197, 150), zoom 5 wide | 20:00, dusk, settle 60 ticks
+#   6. workshop-6-dusk | emerald-clearing, centre (197, 152), table cell (197, 150), zoom 3.5 medium | 21:00, dusk, settle 60 ticks
 #         Subject/says: the whole family gathers for the evening meal: six body types, five scale colours, one family.
 #         Composition: wide, the table across the middle; Brum and Korr seated left, Ysha standing right, Aren and Sael on the
 #           far side, Pip on the floor at the front, Nelim at the end pouring; lamps lit left and right; guests sit or stand
@@ -88,7 +88,7 @@
 #         Living: seven pawns, all smiling; Cat asleep under the table (animal from the side). Same outfits as the day.
 #         Decor: no props of the map (free clearing); table with MealFine and Beer (verify), a Campfire and two lit TorchLamp (no mains
 #           power in the clearing), PlantPot x2; all removed after.
-#         Criterion j assumed weak (-0.5): seven pawns at zoom 5 are small at 268 px; the closing group is kept for the story.
+#         Criterion j: first capture (zoom 5) read too small at 268 px, zoom 3.5 and 21:00 for a darker dusk; stools spread so wings do not overlap.
 #         Moment: just before, the meal was served; just after, the toast. Obtained: "sits on the building", "faces", "carries
 #           the item", lamps "is lit".
 #
@@ -145,7 +145,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Sael" stands at (179, 128) facing South
     And Nelim's Pickle Tools: "Aren" stands at (181, 128) facing South
     And Nelim's Pickle Tools: "Aren" is forced to walk to (181, 129)
-    And Nelim's Pickle Tools: I frame the cell (178, 128) at zoom 3.5
+    And Nelim's Pickle Tools: I frame the cell (178, 128) at zoom 2.5
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And I take a screenshot "workshop-1-arrival"
@@ -281,7 +281,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Nelim" stands at (150, 110) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "RawBerries"
     And Nelim's Pickle Tools: "Nelim" is forced to walk to (151, 110)
-    And Nelim's Pickle Tools: I frame the cell (154, 110) at zoom 4.5
+    And Nelim's Pickle Tools: I frame the cell (154, 110) at zoom 3
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And I take a screenshot "workshop-3-flowers"
@@ -333,7 +333,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Aren" is forced to walk to (135, 124)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" stands at (131, 124) facing South
-    And Nelim's Pickle Tools: I frame the cell (135, 124) at zoom 5
+    And Nelim's Pickle Tools: I frame the cell (135, 124) at zoom 3.5
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And I take a screenshot "workshop-4-bridge"
@@ -376,18 +376,18 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Sael" is forced to walk to (154, 100)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" stands at (153, 99) facing East
-    And Nelim's Pickle Tools: I frame the cell (155, 99) at zoom 3.5
+    And Nelim's Pickle Tools: I frame the cell (155, 99) at zoom 2.5
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And I take a screenshot "workshop-5-portrait"
     And Nelim's Pickle Tools: the decor is removed
     Then no errors were logged
 
-  Scenario: 6 - workshop-6-dusk (emerald-clearing, 20:00)
+  Scenario: 6 - workshop-6-dusk (emerald-clearing, 21:00)
     Given the save "Nelims-tribe-decor-mods" is loaded
     And game speed is paused
     And I close all dialogs
-    And I set the hour to 20
+    And I set the hour to 21
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: studio presentation mode is enabled
@@ -461,9 +461,9 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Pip" wears "Apparel_KidPants" dyed rgb (90, 58, 32)
     And Nelim's Pickle Tools: I place the decor "Table2x2c" at (197, 150)
     And Nelim's Pickle Tools: I place the decor "Stool" at (195, 152)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (195, 151)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (195, 149)
     And Nelim's Pickle Tools: I place the decor "Stool" at (199, 150)
-    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 151)
+    And Nelim's Pickle Tools: I place the decor "Stool" at (199, 152)
     And Nelim's Pickle Tools: I place the decor "Campfire" at (194, 148)
     And Nelim's Pickle Tools: the decor "Campfire" at (194, 148) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (194, 152)
@@ -477,15 +477,15 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: an adult animal of kind "Cat" named "Mimi" is spawned at (197, 152)
     And Nelim's Pickle Tools: the animal "Mimi" stands at (197, 152) facing South
     And Nelim's Pickle Tools: "Brum" sits on the building "Stool" at (195, 152)
-    And Nelim's Pickle Tools: "Korr" sits on the building "Stool" at (195, 151)
+    And Nelim's Pickle Tools: "Korr" sits on the building "Stool" at (195, 149)
     And Nelim's Pickle Tools: "Aren" sits on the building "Stool" at (199, 150)
-    And Nelim's Pickle Tools: "Sael" sits on the building "Stool" at (199, 151)
+    And Nelim's Pickle Tools: "Sael" sits on the building "Stool" at (199, 152)
     And Nelim's Pickle Tools: "Pip" stands at (197, 153) facing South
     And Nelim's Pickle Tools: "Ysha" stands at (201, 150) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" stands at (196, 149) facing East
     And Nelim's Pickle Tools: "Nelim" carries the item "Beer"
-    And Nelim's Pickle Tools: I frame the cell (197, 152) at zoom 5
+    And Nelim's Pickle Tools: I frame the cell (197, 152) at zoom 3.5
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
     And I take a screenshot "workshop-6-dusk"
