@@ -375,7 +375,7 @@ Feature: Workshop gallery, one day at the Sanctuary
     And Nelim's Pickle Tools: "Sael" stands at (154, 99) facing East
     And Nelim's Pickle Tools: "Sael" is forced to walk to (154, 100)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
-    And Nelim's Pickle Tools: "Nelim" stands at (152, 100) facing East
+    And Nelim's Pickle Tools: "Nelim" stands at (153, 99) facing East
     And Nelim's Pickle Tools: I frame the cell (155, 99) at zoom 3.5
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" facial expression "normal" is held
