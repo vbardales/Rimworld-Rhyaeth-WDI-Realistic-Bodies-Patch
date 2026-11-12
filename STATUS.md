@@ -94,7 +94,7 @@ Offline, on revision `14d0677` of this repository, Erin's Rhy'aeth 3707527452 an
 
 First sync, at the start of `shootGallery`: no shotlist exists yet, so nothing in the mod moved; this section records what NSB and NPT offer and what is still open. The Pickle suite plays on the fixture `test-colony`, not on the NSB save, with anonymous colonists ("Rhy") built by step.
 
-Places read: 2026-11-10 (SANCTUAIRE-LIEUX.md sections 4 and 11 only) Tribe read: 2026-11-10 (CELESTE-PROFIL, IORI-PROFIL, NSB-ROSTER lines for both, HUMAINS-PROFILS, GALERIE-COLONS, AVANCEMENT and VALIDE lines for both) Steps read: 2026-11-10 (git log of PickleTools steps and catalogues, steps.md for the Rhy'aeth steps, catalogues/rhyaeth.md head)
+Places read: 2026-11-10 (SANCTUAIRE-LIEUX.md sections 4 and 11 only) Tribe read: 2026-11-10 (CELESTE-PROFIL, IORI-PROFIL, NSB-ROSTER lines for both, HUMAINS-PROFILS, GALERIE-COLONS, AVANCEMENT and VALIDE lines for both) Steps read: 2026-11-12 (git log since 2026-11-10 of PickleTools steps.md and catalogues: new steps for culture, work givers, animal surgery, pot with plant, UI hiding; none renamed or removed that 05-gallery.feature calls, Check-Steps resolves every line)
 
 Rules said back (owner, 2026-11-05 to 2026-11-07): everything in NSB is free (places, colonists, domestic animals); a colonist or domestic animal outside NSB needs the owner's express validation before the shotlist counts on it; a colonist's properties change only with her express validation; every outfit is free; every animal the mod includes must be in the gallery.
 
@@ -116,7 +116,7 @@ Rules said back (owner, 2026-11-05 to 2026-11-07): everything in NSB is free (pl
 | --- | --- | --- |
 | none: the patch only redraws the Rhy'aeth body of Erin's xenotype | none | nothing missing |
 
-NPT since this mod's last read: no step or catalogue change touches Rhy'aeth looks; `catalogues/rhyaeth.md` (31 defs, 2026-11-02) is the reference for the parts. Steps this mod already uses: `loses the gene`, `is undressed`, `takes off the garments covering`, `faces`.
+NPT since this mod's last read (re-synced 2026-11-12): no step or catalogue change touches Rhy'aeth looks; one new step may serve the gallery frame: `Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden` (not used yet); `catalogues/rhyaeth.md` (31 defs, 2026-11-02) is the reference for the parts. Steps this mod already uses: `loses the gene`, `is undressed`, `takes off the garments covering`, `faces`.
 
 Open: Celeste (Female_Hulk) is not validated by NSB yet and Iori's Rhy'aeth properties are open on its side, so a gallery shot of either needs the owner's word on the look (quote and date in the shotlist) or an NSB-validated alternative.
 
